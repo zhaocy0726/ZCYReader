@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		347384B05913C5C37AA7AE52 /* libPods-ZCYReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140B140932F1B841A07D70CA /* libPods-ZCYReader.a */; };
 		391FCF2322CAF51C00921C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF2222CAF51C00921C1D /* AppDelegate.m */; };
 		391FCF2622CAF51C00921C1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF2522CAF51C00921C1D /* ViewController.m */; };
 		391FCF2922CAF51C00921C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391FCF2722CAF51C00921C1D /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140B140932F1B841A07D70CA /* libPods-ZCYReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C12DF7731CCD624E941004 /* Pods-ZCYReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYReader/Pods-ZCYReader.release.xcconfig"; sourceTree = "<group>"; };
 		391FCF1E22CAF51C00921C1D /* ZCYReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCYReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		391FCF2122CAF51C00921C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		391FCF2222CAF51C00921C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		391FCF4122CAF51E00921C1D /* ZCYReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCYReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		391FCF4522CAF51E00921C1D /* ZCYReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYReaderUITests.m; sourceTree = "<group>"; };
 		391FCF4722CAF51E00921C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF866897AF26BAA19C82DB2 /* Pods-ZCYReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYReader/Pods-ZCYReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347384B05913C5C37AA7AE52 /* libPods-ZCYReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EEA4F6E122963ABE61AD354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAF866897AF26BAA19C82DB2 /* Pods-ZCYReader.debug.xcconfig */,
+				25C12DF7731CCD624E941004 /* Pods-ZCYReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		391FCF1522CAF51C00921C1D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				391FCF3922CAF51E00921C1D /* ZCYReaderTests */,
 				391FCF4422CAF51E00921C1D /* ZCYReaderUITests */,
 				391FCF1F22CAF51C00921C1D /* Products */,
+				1EEA4F6E122963ABE61AD354 /* Pods */,
+				9819487C537D02996F56CBE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = ZCYReaderUITests;
 			sourceTree = "<group>";
 		};
+		9819487C537D02996F56CBE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140B140932F1B841A07D70CA /* libPods-ZCYReader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 391FCF4A22CAF51E00921C1D /* Build configuration list for PBXNativeTarget "ZCYReader" */;
 			buildPhases = (
+				E12AFDC70FF4D8CEB09EA47F /* [CP] Check Pods Manifest.lock */,
 				391FCF1A22CAF51C00921C1D /* Sources */,
 				391FCF1B22CAF51C00921C1D /* Frameworks */,
 				391FCF1C22CAF51C00921C1D /* Resources */,
+				2BC92A5F85241759DE7B43F7 /* [CP] Embed Pods Frameworks */,
+				D63076FD9B6C5FCCBAD8F297 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BC92A5F85241759DE7B43F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYReader/Pods-ZCYReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D63076FD9B6C5FCCBAD8F297 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYReader/Pods-ZCYReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12AFDC70FF4D8CEB09EA47F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		391FCF1A22CAF51C00921C1D /* Sources */ = {
@@ -433,15 +508,13 @@
 		};
 		391FCF4B22CAF51E00921C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF866897AF26BAA19C82DB2 /* Pods-ZCYReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL9GCTA7BP;
 				INFOPLIST_FILE = ZCYReader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,15 +523,13 @@
 		};
 		391FCF4C22CAF51E00921C1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C12DF7731CCD624E941004 /* Pods-ZCYReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL9GCTA7BP;
 				INFOPLIST_FILE = ZCYReader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,11 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,11 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,11 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,11 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
