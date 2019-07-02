@@ -16,6 +16,67 @@
 		391FCF3122CAF51E00921C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF3022CAF51E00921C1D /* main.m */; };
 		391FCF3B22CAF51E00921C1D /* ZCYReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF3A22CAF51E00921C1D /* ZCYReaderTests.m */; };
 		391FCF4622CAF51E00921C1D /* ZCYReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF4522CAF51E00921C1D /* ZCYReaderUITests.m */; };
+		391FCFD622CB046700921C1D /* 华文新魏.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391FCF5522CB046600921C1D /* 华文新魏.ttf */; };
+		391FCFD722CB046700921C1D /* 华文行楷.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391FCF5622CB046600921C1D /* 华文行楷.ttf */; };
+		391FCFD822CB046700921C1D /* 华文彩云.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391FCF5722CB046600921C1D /* 华文彩云.ttf */; };
+		391FCFD922CB046700921C1D /* 华文琥珀.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 391FCF5822CB046600921C1D /* 华文琥珀.ttf */; };
+		391FCFDA22CB046700921C1D /* XDSReadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF5C22CB046600921C1D /* XDSReadManager.m */; };
+		391FCFDB22CB046700921C1D /* XDSReadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF5D22CB046600921C1D /* XDSReadConfig.m */; };
+		391FCFDC22CB046700921C1D /* XDSReadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6022CB046600921C1D /* XDSReadOperation.m */; };
+		391FCFDD22CB046700921C1D /* XDSReaderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6422CB046600921C1D /* XDSReaderUtil.m */; };
+		391FCFDE22CB046700921C1D /* XDSReaderGlobleConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6522CB046600921C1D /* XDSReaderGlobleConst.m */; };
+		391FCFDF22CB046700921C1D /* XDSRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6822CB046600921C1D /* XDSRecordModel.m */; };
+		391FCFE022CB046700921C1D /* XDSNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6922CB046600921C1D /* XDSNoteModel.m */; };
+		391FCFE122CB046700921C1D /* XDSChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6A22CB046600921C1D /* XDSChapterModel.m */; };
+		391FCFE222CB046700921C1D /* XDSMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF6F22CB046600921C1D /* XDSMarkModel.m */; };
+		391FCFE322CB046700921C1D /* XDSBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF7122CB046600921C1D /* XDSBookModel.m */; };
+		391FCFE422CB046700921C1D /* XDSMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF7322CB046600921C1D /* XDSMagnifierView.m */; };
+		391FCFE522CB046700921C1D /* UIControl+XDSHyperLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF7522CB046600921C1D /* UIControl+XDSHyperLink.m */; };
+		391FCFE622CB046700921C1D /* XDSReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF7722CB046600921C1D /* XDSReadView.m */; };
+		391FCFE722CB046700921C1D /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8022CB046600921C1D /* CXMLDocument.m */; };
+		391FCFE822CB046700921C1D /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8122CB046600921C1D /* CXMLNode.m */; };
+		391FCFE922CB046700921C1D /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8222CB046600921C1D /* CXMLNamespaceNode.m */; };
+		391FCFEA22CB046700921C1D /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8322CB046600921C1D /* CXMLNode_XPathExtensions.m */; };
+		391FCFEB22CB046700921C1D /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8522CB046600921C1D /* CXMLNode_PrivateExtensions.m */; };
+		391FCFEC22CB046700921C1D /* CXMLUnsupportedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8822CB046600921C1D /* CXMLUnsupportedNode.m */; };
+		391FCFED22CB046700921C1D /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF8922CB046600921C1D /* CXMLElement_ElementTreeExtensions.m */; };
+		391FCFEE22CB046700921C1D /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9322CB046600921C1D /* CXMLNode_CreationExtensions.m */; };
+		391FCFEF22CB046700921C1D /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9422CB046600921C1D /* CXMLDocument_CreationExtensions.m */; };
+		391FCFF022CB046700921C1D /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9722CB046600921C1D /* CTidy.m */; };
+		391FCFF122CB046700921C1D /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9822CB046600921C1D /* CXMLDocument_PrivateExtensions.m */; };
+		391FCFF222CB046700921C1D /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9922CB046600921C1D /* CXHTMLDocument.m */; };
+		391FCFF322CB046700921C1D /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9B22CB046600921C1D /* CXMLElement_CreationExtensions.m */; };
+		391FCFF422CB046700921C1D /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCF9C22CB046600921C1D /* CXMLElement.m */; };
+		391FCFF522CB046700921C1D /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFA022CB046600921C1D /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		391FCFF622CB046700921C1D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFA122CB046600921C1D /* UIImage+ImageEffects.m */; };
+		391FCFF722CB046700921C1D /* UIView+XDSHyperLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFA222CB046600921C1D /* UIView+XDSHyperLink.m */; };
+		391FCFF822CB046700921C1D /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFA322CB046600921C1D /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		391FCFF922CB046700921C1D /* 妖神记.txt in Resources */ = {isa = PBXBuildFile; fileRef = 391FCFA522CB046600921C1D /* 妖神记.txt */; };
+		391FCFFA22CB046700921C1D /* zoubianzhongguo.epub in Resources */ = {isa = PBXBuildFile; fileRef = 391FCFA622CB046600921C1D /* zoubianzhongguo.epub */; };
+		391FCFFB22CB046700921C1D /* mdjyml.txt in Resources */ = {isa = PBXBuildFile; fileRef = 391FCFA722CB046600921C1D /* mdjyml.txt */; };
+		391FCFFC22CB046700921C1D /* 每天懂一点好玩心理学.epub in Resources */ = {isa = PBXBuildFile; fileRef = 391FCFA822CB046600921C1D /* 每天懂一点好玩心理学.epub */; };
+		391FCFFE22CB046700921C1D /* XDSReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFAB22CB046600921C1D /* XDSReadViewController.m */; };
+		391FCFFF22CB046700921C1D /* XDSReadPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFAE22CB046600921C1D /* XDSReadPageViewController.m */; };
+		391FD00022CB046700921C1D /* XDSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFB022CB046600921C1D /* XDSPhotoBrowser.m */; };
+		391FD00122CB046700921C1D /* XDSReadMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFB222CB046600921C1D /* XDSReadMenu.m */; };
+		391FD00222CB046700921C1D /* XDSNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391FCFB522CB046600921C1D /* XDSNoDataView.xib */; };
+		391FD00322CB046700921C1D /* XDSCatalogueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFB622CB046600921C1D /* XDSCatalogueView.m */; };
+		391FD00422CB046700921C1D /* XDSCatalogueTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFBC22CB046700921C1D /* XDSCatalogueTabBarController.m */; };
+		391FD00522CB046700921C1D /* XDSCatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFBE22CB046700921C1D /* XDSCatalogueViewController.m */; };
+		391FD00622CB046700921C1D /* XDSMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFBF22CB046700921C1D /* XDSMarkViewController.m */; };
+		391FD00722CB046700921C1D /* XDSNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC022CB046700921C1D /* XDSNoDataView.m */; };
+		391FD00822CB046700921C1D /* XDSNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC122CB046700921C1D /* XDSNoteViewController.m */; };
+		391FD00922CB046700921C1D /* XDSNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC222CB046700921C1D /* XDSNoteCell.m */; };
+		391FD00A22CB046700921C1D /* XDSReadSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC322CB046700921C1D /* XDSReadSettingView.m */; };
+		391FD00B22CB046700921C1D /* XDSReadRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC422CB046700921C1D /* XDSReadRootView.m */; };
+		391FD00C22CB046700921C1D /* XDSMenuTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC522CB046700921C1D /* XDSMenuTopView.m */; };
+		391FD00D22CB046700921C1D /* XDSReadViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC722CB046700921C1D /* XDSReadViewConst.m */; };
+		391FD00E22CB046700921C1D /* XDSMenuBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFC822CB046700921C1D /* XDSMenuBottomView.m */; };
+		391FD00F22CB046700921C1D /* XDSReadMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391FCFC922CB046700921C1D /* XDSReadMenu.xcassets */; };
+		391FD01022CB046700921C1D /* XDSLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFCA22CB046700921C1D /* XDSLightView.m */; };
+		391FD01122CB046700921C1D /* UIView+YGPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFCC22CB046700921C1D /* UIView+YGPulseView.m */; };
+		391FD01222CB046700921C1D /* XDSHaloButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 391FCFD222CB046700921C1D /* XDSHaloButton.m */; };
+		391FD01522CB06DF00921C1D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 391FD01422CB06DF00921C1D /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +115,122 @@
 		391FCF4122CAF51E00921C1D /* ZCYReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCYReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		391FCF4522CAF51E00921C1D /* ZCYReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYReaderUITests.m; sourceTree = "<group>"; };
 		391FCF4722CAF51E00921C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391FCF5522CB046600921C1D /* 华文新魏.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华文新魏.ttf"; sourceTree = "<group>"; };
+		391FCF5622CB046600921C1D /* 华文行楷.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华文行楷.ttf"; sourceTree = "<group>"; };
+		391FCF5722CB046600921C1D /* 华文彩云.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华文彩云.ttf"; sourceTree = "<group>"; };
+		391FCF5822CB046600921C1D /* 华文琥珀.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华文琥珀.ttf"; sourceTree = "<group>"; };
+		391FCF5B22CB046600921C1D /* XDSReadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadOperation.h; sourceTree = "<group>"; };
+		391FCF5C22CB046600921C1D /* XDSReadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadManager.m; sourceTree = "<group>"; };
+		391FCF5D22CB046600921C1D /* XDSReadConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadConfig.m; sourceTree = "<group>"; };
+		391FCF5E22CB046600921C1D /* XDSReadConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadConfig.h; sourceTree = "<group>"; };
+		391FCF5F22CB046600921C1D /* XDSReadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadManager.h; sourceTree = "<group>"; };
+		391FCF6022CB046600921C1D /* XDSReadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadOperation.m; sourceTree = "<group>"; };
+		391FCF6222CB046600921C1D /* XDSReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReaderDelegate.h; sourceTree = "<group>"; };
+		391FCF6322CB046600921C1D /* XDSReaderGlobleConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReaderGlobleConst.h; sourceTree = "<group>"; };
+		391FCF6422CB046600921C1D /* XDSReaderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReaderUtil.m; sourceTree = "<group>"; };
+		391FCF6522CB046600921C1D /* XDSReaderGlobleConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReaderGlobleConst.m; sourceTree = "<group>"; };
+		391FCF6622CB046600921C1D /* XDSReaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReaderUtil.h; sourceTree = "<group>"; };
+		391FCF6822CB046600921C1D /* XDSRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSRecordModel.m; sourceTree = "<group>"; };
+		391FCF6922CB046600921C1D /* XDSNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSNoteModel.m; sourceTree = "<group>"; };
+		391FCF6A22CB046600921C1D /* XDSChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSChapterModel.m; sourceTree = "<group>"; };
+		391FCF6B22CB046600921C1D /* XDSMarkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSMarkModel.h; sourceTree = "<group>"; };
+		391FCF6C22CB046600921C1D /* XDSBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSBookModel.h; sourceTree = "<group>"; };
+		391FCF6D22CB046600921C1D /* XDSRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSRecordModel.h; sourceTree = "<group>"; };
+		391FCF6E22CB046600921C1D /* XDSChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSChapterModel.h; sourceTree = "<group>"; };
+		391FCF6F22CB046600921C1D /* XDSMarkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSMarkModel.m; sourceTree = "<group>"; };
+		391FCF7022CB046600921C1D /* XDSNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSNoteModel.h; sourceTree = "<group>"; };
+		391FCF7122CB046600921C1D /* XDSBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSBookModel.m; sourceTree = "<group>"; };
+		391FCF7322CB046600921C1D /* XDSMagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSMagnifierView.m; sourceTree = "<group>"; };
+		391FCF7422CB046600921C1D /* XDSReadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadView.h; sourceTree = "<group>"; };
+		391FCF7522CB046600921C1D /* UIControl+XDSHyperLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XDSHyperLink.m"; sourceTree = "<group>"; };
+		391FCF7622CB046600921C1D /* UIControl+XDSHyperLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XDSHyperLink.h"; sourceTree = "<group>"; };
+		391FCF7722CB046600921C1D /* XDSReadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadView.m; sourceTree = "<group>"; };
+		391FCF7822CB046600921C1D /* XDSMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSMagnifierView.h; sourceTree = "<group>"; };
+		391FCF7922CB046600921C1D /* XDSReaderHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReaderHeader.h; sourceTree = "<group>"; };
+		391FCF7B22CB046600921C1D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		391FCF7C22CB046600921C1D /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		391FCF7D22CB046600921C1D /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		391FCF7E22CB046600921C1D /* UIView+XDSHyperLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XDSHyperLink.h"; sourceTree = "<group>"; };
+		391FCF8022CB046600921C1D /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		391FCF8122CB046600921C1D /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		391FCF8222CB046600921C1D /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		391FCF8322CB046600921C1D /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		391FCF8422CB046600921C1D /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		391FCF8522CB046600921C1D /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		391FCF8622CB046600921C1D /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		391FCF8722CB046600921C1D /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		391FCF8822CB046600921C1D /* CXMLUnsupportedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLUnsupportedNode.m; sourceTree = "<group>"; };
+		391FCF8922CB046600921C1D /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		391FCF8A22CB046600921C1D /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		391FCF8B22CB046600921C1D /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		391FCF8C22CB046600921C1D /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		391FCF8D22CB046600921C1D /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		391FCF8E22CB046600921C1D /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		391FCF8F22CB046600921C1D /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		391FCF9122CB046600921C1D /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		391FCF9222CB046600921C1D /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		391FCF9322CB046600921C1D /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		391FCF9422CB046600921C1D /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		391FCF9622CB046600921C1D /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		391FCF9722CB046600921C1D /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		391FCF9822CB046600921C1D /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		391FCF9922CB046600921C1D /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		391FCF9A22CB046600921C1D /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		391FCF9B22CB046600921C1D /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		391FCF9C22CB046600921C1D /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		391FCF9D22CB046600921C1D /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		391FCF9E22CB046600921C1D /* CXMLUnsupportedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLUnsupportedNode.h; sourceTree = "<group>"; };
+		391FCF9F22CB046600921C1D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		391FCFA022CB046600921C1D /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		391FCFA122CB046600921C1D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		391FCFA222CB046600921C1D /* UIView+XDSHyperLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XDSHyperLink.m"; sourceTree = "<group>"; };
+		391FCFA322CB046600921C1D /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		391FCFA522CB046600921C1D /* 妖神记.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "妖神记.txt"; sourceTree = "<group>"; };
+		391FCFA622CB046600921C1D /* zoubianzhongguo.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = zoubianzhongguo.epub; sourceTree = "<group>"; };
+		391FCFA722CB046600921C1D /* mdjyml.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mdjyml.txt; sourceTree = "<group>"; };
+		391FCFA822CB046600921C1D /* 每天懂一点好玩心理学.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "每天懂一点好玩心理学.epub"; sourceTree = "<group>"; };
+		391FCFAB22CB046600921C1D /* XDSReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadViewController.m; sourceTree = "<group>"; };
+		391FCFAC22CB046600921C1D /* XDSReadPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadPageViewController.h; sourceTree = "<group>"; };
+		391FCFAD22CB046600921C1D /* XDSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSPhotoBrowser.h; sourceTree = "<group>"; };
+		391FCFAE22CB046600921C1D /* XDSReadPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadPageViewController.m; sourceTree = "<group>"; };
+		391FCFAF22CB046600921C1D /* XDSReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadViewController.h; sourceTree = "<group>"; };
+		391FCFB022CB046600921C1D /* XDSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSPhotoBrowser.m; sourceTree = "<group>"; };
+		391FCFB222CB046600921C1D /* XDSReadMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadMenu.m; sourceTree = "<group>"; };
+		391FCFB422CB046600921C1D /* XDSCatalogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSCatalogueViewController.h; sourceTree = "<group>"; };
+		391FCFB522CB046600921C1D /* XDSNoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XDSNoDataView.xib; sourceTree = "<group>"; };
+		391FCFB622CB046600921C1D /* XDSCatalogueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSCatalogueView.m; sourceTree = "<group>"; };
+		391FCFB722CB046700921C1D /* XDSCatalogueTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSCatalogueTabBarController.h; sourceTree = "<group>"; };
+		391FCFB822CB046700921C1D /* XDSNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSNoDataView.h; sourceTree = "<group>"; };
+		391FCFB922CB046700921C1D /* XDSMarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSMarkViewController.h; sourceTree = "<group>"; };
+		391FCFBA22CB046700921C1D /* XDSNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSNoteCell.h; sourceTree = "<group>"; };
+		391FCFBB22CB046700921C1D /* XDSNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSNoteViewController.h; sourceTree = "<group>"; };
+		391FCFBC22CB046700921C1D /* XDSCatalogueTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSCatalogueTabBarController.m; sourceTree = "<group>"; };
+		391FCFBD22CB046700921C1D /* XDSCatalogueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSCatalogueView.h; sourceTree = "<group>"; };
+		391FCFBE22CB046700921C1D /* XDSCatalogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSCatalogueViewController.m; sourceTree = "<group>"; };
+		391FCFBF22CB046700921C1D /* XDSMarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSMarkViewController.m; sourceTree = "<group>"; };
+		391FCFC022CB046700921C1D /* XDSNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSNoDataView.m; sourceTree = "<group>"; };
+		391FCFC122CB046700921C1D /* XDSNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSNoteViewController.m; sourceTree = "<group>"; };
+		391FCFC222CB046700921C1D /* XDSNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSNoteCell.m; sourceTree = "<group>"; };
+		391FCFC322CB046700921C1D /* XDSReadSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadSettingView.m; sourceTree = "<group>"; };
+		391FCFC422CB046700921C1D /* XDSReadRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadRootView.m; sourceTree = "<group>"; };
+		391FCFC522CB046700921C1D /* XDSMenuTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSMenuTopView.m; sourceTree = "<group>"; };
+		391FCFC622CB046700921C1D /* XDSHaloButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSHaloButton.h; sourceTree = "<group>"; };
+		391FCFC722CB046700921C1D /* XDSReadViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSReadViewConst.m; sourceTree = "<group>"; };
+		391FCFC822CB046700921C1D /* XDSMenuBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSMenuBottomView.m; sourceTree = "<group>"; };
+		391FCFC922CB046700921C1D /* XDSReadMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XDSReadMenu.xcassets; sourceTree = "<group>"; };
+		391FCFCA22CB046700921C1D /* XDSLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSLightView.m; sourceTree = "<group>"; };
+		391FCFCC22CB046700921C1D /* UIView+YGPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGPulseView.m"; sourceTree = "<group>"; };
+		391FCFCD22CB046700921C1D /* UIView+YGPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGPulseView.h"; sourceTree = "<group>"; };
+		391FCFCE22CB046700921C1D /* XDSReadRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadRootView.h; sourceTree = "<group>"; };
+		391FCFCF22CB046700921C1D /* XDSReadSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadSettingView.h; sourceTree = "<group>"; };
+		391FCFD022CB046700921C1D /* XDSReadMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadMenu.h; sourceTree = "<group>"; };
+		391FCFD122CB046700921C1D /* XDSReadViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSReadViewConst.h; sourceTree = "<group>"; };
+		391FCFD222CB046700921C1D /* XDSHaloButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSHaloButton.m; sourceTree = "<group>"; };
+		391FCFD322CB046700921C1D /* XDSMenuTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSMenuTopView.h; sourceTree = "<group>"; };
+		391FCFD422CB046700921C1D /* XDSMenuBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSMenuBottomView.h; sourceTree = "<group>"; };
+		391FCFD522CB046700921C1D /* XDSLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSLightView.h; sourceTree = "<group>"; };
+		391FD01322CB04AD00921C1D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		391FD01422CB06DF00921C1D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		AAF866897AF26BAA19C82DB2 /* Pods-ZCYReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYReader/Pods-ZCYReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391FD01522CB06DF00921C1D /* libz.tbd in Frameworks */,
 				347384B05913C5C37AA7AE52 /* libPods-ZCYReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +299,8 @@
 				391FCF2222CAF51C00921C1D /* AppDelegate.m */,
 				391FCF2422CAF51C00921C1D /* ViewController.h */,
 				391FCF2522CAF51C00921C1D /* ViewController.m */,
+				391FD01322CB04AD00921C1D /* PrefixHeader.pch */,
+				391FCF5322CB044200921C1D /* Reader */,
 				391FCF2722CAF51C00921C1D /* Main.storyboard */,
 				391FCF2A22CAF51E00921C1D /* Assets.xcassets */,
 				391FCF2C22CAF51E00921C1D /* LaunchScreen.storyboard */,
@@ -148,9 +328,251 @@
 			path = ZCYReaderUITests;
 			sourceTree = "<group>";
 		};
+		391FCF5322CB044200921C1D /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF5422CB046600921C1D /* 华文字体 */,
+				391FCF5922CB046600921C1D /* XDSReaderKit */,
+				391FCFB122CB046600921C1D /* XDSReadMenu */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		391FCF5422CB046600921C1D /* 华文字体 */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF5522CB046600921C1D /* 华文新魏.ttf */,
+				391FCF5622CB046600921C1D /* 华文行楷.ttf */,
+				391FCF5722CB046600921C1D /* 华文彩云.ttf */,
+				391FCF5822CB046600921C1D /* 华文琥珀.ttf */,
+			);
+			path = "华文字体";
+			sourceTree = "<group>";
+		};
+		391FCF5922CB046600921C1D /* XDSReaderKit */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF7922CB046600921C1D /* XDSReaderHeader.h */,
+				391FCF5A22CB046600921C1D /* Core */,
+				391FCF6122CB046600921C1D /* Util */,
+				391FCF6722CB046600921C1D /* Model */,
+				391FCF7222CB046600921C1D /* View */,
+				391FCF7A22CB046600921C1D /* External */,
+				391FCFA422CB046600921C1D /* Resource */,
+				391FCFAA22CB046600921C1D /* ViewController */,
+			);
+			path = XDSReaderKit;
+			sourceTree = "<group>";
+		};
+		391FCF5A22CB046600921C1D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF5B22CB046600921C1D /* XDSReadOperation.h */,
+				391FCF5C22CB046600921C1D /* XDSReadManager.m */,
+				391FCF5D22CB046600921C1D /* XDSReadConfig.m */,
+				391FCF5E22CB046600921C1D /* XDSReadConfig.h */,
+				391FCF5F22CB046600921C1D /* XDSReadManager.h */,
+				391FCF6022CB046600921C1D /* XDSReadOperation.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		391FCF6122CB046600921C1D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF6222CB046600921C1D /* XDSReaderDelegate.h */,
+				391FCF6322CB046600921C1D /* XDSReaderGlobleConst.h */,
+				391FCF6422CB046600921C1D /* XDSReaderUtil.m */,
+				391FCF6522CB046600921C1D /* XDSReaderGlobleConst.m */,
+				391FCF6622CB046600921C1D /* XDSReaderUtil.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		391FCF6722CB046600921C1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF6822CB046600921C1D /* XDSRecordModel.m */,
+				391FCF6922CB046600921C1D /* XDSNoteModel.m */,
+				391FCF6A22CB046600921C1D /* XDSChapterModel.m */,
+				391FCF6B22CB046600921C1D /* XDSMarkModel.h */,
+				391FCF6C22CB046600921C1D /* XDSBookModel.h */,
+				391FCF6D22CB046600921C1D /* XDSRecordModel.h */,
+				391FCF6E22CB046600921C1D /* XDSChapterModel.h */,
+				391FCF6F22CB046600921C1D /* XDSMarkModel.m */,
+				391FCF7022CB046600921C1D /* XDSNoteModel.h */,
+				391FCF7122CB046600921C1D /* XDSBookModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		391FCF7222CB046600921C1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF7322CB046600921C1D /* XDSMagnifierView.m */,
+				391FCF7422CB046600921C1D /* XDSReadView.h */,
+				391FCF7522CB046600921C1D /* UIControl+XDSHyperLink.m */,
+				391FCF7622CB046600921C1D /* UIControl+XDSHyperLink.h */,
+				391FCF7722CB046600921C1D /* XDSReadView.m */,
+				391FCF7822CB046600921C1D /* XDSMagnifierView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		391FCF7A22CB046600921C1D /* External */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF7B22CB046600921C1D /* UIImage+ImageEffects.h */,
+				391FCF7C22CB046600921C1D /* NSString+HTML.h */,
+				391FCF7D22CB046600921C1D /* GTMNSString+HTML.h */,
+				391FCF7E22CB046600921C1D /* UIView+XDSHyperLink.h */,
+				391FCF7F22CB046600921C1D /* TouchXML */,
+				391FCF9F22CB046600921C1D /* GTMDefines.h */,
+				391FCFA022CB046600921C1D /* NSString+HTML.m */,
+				391FCFA122CB046600921C1D /* UIImage+ImageEffects.m */,
+				391FCFA222CB046600921C1D /* UIView+XDSHyperLink.m */,
+				391FCFA322CB046600921C1D /* GTMNSString+HTML.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		391FCF7F22CB046600921C1D /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF8022CB046600921C1D /* CXMLDocument.m */,
+				391FCF8122CB046600921C1D /* CXMLNode.m */,
+				391FCF8222CB046600921C1D /* CXMLNamespaceNode.m */,
+				391FCF8322CB046600921C1D /* CXMLNode_XPathExtensions.m */,
+				391FCF8422CB046600921C1D /* CXMLElement_CreationExtensions.h */,
+				391FCF8522CB046600921C1D /* CXMLNode_PrivateExtensions.m */,
+				391FCF8622CB046600921C1D /* CXHTMLDocument.h */,
+				391FCF8722CB046600921C1D /* CXMLDocument_PrivateExtensions.h */,
+				391FCF8822CB046600921C1D /* CXMLUnsupportedNode.m */,
+				391FCF8922CB046600921C1D /* CXMLElement_ElementTreeExtensions.m */,
+				391FCF8A22CB046600921C1D /* CXMLElement.h */,
+				391FCF8B22CB046600921C1D /* TouchXML.h */,
+				391FCF8C22CB046600921C1D /* CXMLNamespaceNode.h */,
+				391FCF8D22CB046600921C1D /* CXMLNode_XPathExtensions.h */,
+				391FCF8E22CB046600921C1D /* CXMLNode.h */,
+				391FCF8F22CB046600921C1D /* CXMLDocument.h */,
+				391FCF9022CB046600921C1D /* Creation */,
+				391FCF9522CB046600921C1D /* Tidy */,
+				391FCF9822CB046600921C1D /* CXMLDocument_PrivateExtensions.m */,
+				391FCF9922CB046600921C1D /* CXHTMLDocument.m */,
+				391FCF9A22CB046600921C1D /* CXMLNode_PrivateExtensions.h */,
+				391FCF9B22CB046600921C1D /* CXMLElement_CreationExtensions.m */,
+				391FCF9C22CB046600921C1D /* CXMLElement.m */,
+				391FCF9D22CB046600921C1D /* CXMLElement_ElementTreeExtensions.h */,
+				391FCF9E22CB046600921C1D /* CXMLUnsupportedNode.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		391FCF9022CB046600921C1D /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF9122CB046600921C1D /* CXMLNode_CreationExtensions.h */,
+				391FCF9222CB046600921C1D /* CXMLDocument_CreationExtensions.h */,
+				391FCF9322CB046600921C1D /* CXMLNode_CreationExtensions.m */,
+				391FCF9422CB046600921C1D /* CXMLDocument_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		391FCF9522CB046600921C1D /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				391FCF9622CB046600921C1D /* CTidy.h */,
+				391FCF9722CB046600921C1D /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
+		391FCFA422CB046600921C1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				391FCFA522CB046600921C1D /* 妖神记.txt */,
+				391FCFA622CB046600921C1D /* zoubianzhongguo.epub */,
+				391FCFA722CB046600921C1D /* mdjyml.txt */,
+				391FCFA822CB046600921C1D /* 每天懂一点好玩心理学.epub */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		391FCFAA22CB046600921C1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				391FCFAB22CB046600921C1D /* XDSReadViewController.m */,
+				391FCFAC22CB046600921C1D /* XDSReadPageViewController.h */,
+				391FCFAD22CB046600921C1D /* XDSPhotoBrowser.h */,
+				391FCFAE22CB046600921C1D /* XDSReadPageViewController.m */,
+				391FCFAF22CB046600921C1D /* XDSReadViewController.h */,
+				391FCFB022CB046600921C1D /* XDSPhotoBrowser.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		391FCFB122CB046600921C1D /* XDSReadMenu */ = {
+			isa = PBXGroup;
+			children = (
+				391FCFB222CB046600921C1D /* XDSReadMenu.m */,
+				391FCFB322CB046600921C1D /* Catologue */,
+				391FCFC322CB046700921C1D /* XDSReadSettingView.m */,
+				391FCFC422CB046700921C1D /* XDSReadRootView.m */,
+				391FCFC522CB046700921C1D /* XDSMenuTopView.m */,
+				391FCFC622CB046700921C1D /* XDSHaloButton.h */,
+				391FCFC722CB046700921C1D /* XDSReadViewConst.m */,
+				391FCFC822CB046700921C1D /* XDSMenuBottomView.m */,
+				391FCFC922CB046700921C1D /* XDSReadMenu.xcassets */,
+				391FCFCA22CB046700921C1D /* XDSLightView.m */,
+				391FCFCB22CB046700921C1D /* YGPulseView */,
+				391FCFCE22CB046700921C1D /* XDSReadRootView.h */,
+				391FCFCF22CB046700921C1D /* XDSReadSettingView.h */,
+				391FCFD022CB046700921C1D /* XDSReadMenu.h */,
+				391FCFD122CB046700921C1D /* XDSReadViewConst.h */,
+				391FCFD222CB046700921C1D /* XDSHaloButton.m */,
+				391FCFD322CB046700921C1D /* XDSMenuTopView.h */,
+				391FCFD422CB046700921C1D /* XDSMenuBottomView.h */,
+				391FCFD522CB046700921C1D /* XDSLightView.h */,
+			);
+			path = XDSReadMenu;
+			sourceTree = "<group>";
+		};
+		391FCFB322CB046600921C1D /* Catologue */ = {
+			isa = PBXGroup;
+			children = (
+				391FCFB422CB046600921C1D /* XDSCatalogueViewController.h */,
+				391FCFB522CB046600921C1D /* XDSNoDataView.xib */,
+				391FCFB622CB046600921C1D /* XDSCatalogueView.m */,
+				391FCFB722CB046700921C1D /* XDSCatalogueTabBarController.h */,
+				391FCFB822CB046700921C1D /* XDSNoDataView.h */,
+				391FCFB922CB046700921C1D /* XDSMarkViewController.h */,
+				391FCFBA22CB046700921C1D /* XDSNoteCell.h */,
+				391FCFBB22CB046700921C1D /* XDSNoteViewController.h */,
+				391FCFBC22CB046700921C1D /* XDSCatalogueTabBarController.m */,
+				391FCFBD22CB046700921C1D /* XDSCatalogueView.h */,
+				391FCFBE22CB046700921C1D /* XDSCatalogueViewController.m */,
+				391FCFBF22CB046700921C1D /* XDSMarkViewController.m */,
+				391FCFC022CB046700921C1D /* XDSNoDataView.m */,
+				391FCFC122CB046700921C1D /* XDSNoteViewController.m */,
+				391FCFC222CB046700921C1D /* XDSNoteCell.m */,
+			);
+			path = Catologue;
+			sourceTree = "<group>";
+		};
+		391FCFCB22CB046700921C1D /* YGPulseView */ = {
+			isa = PBXGroup;
+			children = (
+				391FCFCC22CB046700921C1D /* UIView+YGPulseView.m */,
+				391FCFCD22CB046700921C1D /* UIView+YGPulseView.h */,
+			);
+			path = YGPulseView;
+			sourceTree = "<group>";
+		};
 		9819487C537D02996F56CBE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				391FD01422CB06DF00921C1D /* libz.tbd */,
 				140B140932F1B841A07D70CA /* libPods-ZCYReader.a */,
 			);
 			name = Frameworks;
@@ -262,9 +684,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391FCFFA22CB046700921C1D /* zoubianzhongguo.epub in Resources */,
+				391FCFD622CB046700921C1D /* 华文新魏.ttf in Resources */,
+				391FCFF922CB046700921C1D /* 妖神记.txt in Resources */,
+				391FD00F22CB046700921C1D /* XDSReadMenu.xcassets in Resources */,
+				391FCFFC22CB046700921C1D /* 每天懂一点好玩心理学.epub in Resources */,
+				391FCFD822CB046700921C1D /* 华文彩云.ttf in Resources */,
 				391FCF2E22CAF51E00921C1D /* LaunchScreen.storyboard in Resources */,
+				391FCFD922CB046700921C1D /* 华文琥珀.ttf in Resources */,
+				391FD00222CB046700921C1D /* XDSNoDataView.xib in Resources */,
 				391FCF2B22CAF51E00921C1D /* Assets.xcassets in Resources */,
+				391FCFFB22CB046700921C1D /* mdjyml.txt in Resources */,
 				391FCF2922CAF51C00921C1D /* Main.storyboard in Resources */,
+				391FCFD722CB046700921C1D /* 华文行楷.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +769,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391FCFF622CB046700921C1D /* UIImage+ImageEffects.m in Sources */,
+				391FCFE322CB046700921C1D /* XDSBookModel.m in Sources */,
+				391FD00322CB046700921C1D /* XDSCatalogueView.m in Sources */,
+				391FCFE222CB046700921C1D /* XDSMarkModel.m in Sources */,
+				391FD00E22CB046700921C1D /* XDSMenuBottomView.m in Sources */,
 				391FCF2622CAF51C00921C1D /* ViewController.m in Sources */,
+				391FCFEA22CB046700921C1D /* CXMLNode_XPathExtensions.m in Sources */,
+				391FCFE522CB046700921C1D /* UIControl+XDSHyperLink.m in Sources */,
+				391FD00722CB046700921C1D /* XDSNoDataView.m in Sources */,
+				391FCFFE22CB046700921C1D /* XDSReadViewController.m in Sources */,
+				391FCFDC22CB046700921C1D /* XDSReadOperation.m in Sources */,
+				391FCFF822CB046700921C1D /* GTMNSString+HTML.m in Sources */,
+				391FCFF422CB046700921C1D /* CXMLElement.m in Sources */,
+				391FCFE822CB046700921C1D /* CXMLNode.m in Sources */,
+				391FD00C22CB046700921C1D /* XDSMenuTopView.m in Sources */,
+				391FCFDA22CB046700921C1D /* XDSReadManager.m in Sources */,
+				391FD00822CB046700921C1D /* XDSNoteViewController.m in Sources */,
+				391FCFF722CB046700921C1D /* UIView+XDSHyperLink.m in Sources */,
+				391FCFE922CB046700921C1D /* CXMLNamespaceNode.m in Sources */,
+				391FD00122CB046700921C1D /* XDSReadMenu.m in Sources */,
+				391FCFF022CB046700921C1D /* CTidy.m in Sources */,
+				391FCFF522CB046700921C1D /* NSString+HTML.m in Sources */,
+				391FCFEB22CB046700921C1D /* CXMLNode_PrivateExtensions.m in Sources */,
+				391FD01122CB046700921C1D /* UIView+YGPulseView.m in Sources */,
+				391FCFE422CB046700921C1D /* XDSMagnifierView.m in Sources */,
+				391FCFDF22CB046700921C1D /* XDSRecordModel.m in Sources */,
+				391FD00D22CB046700921C1D /* XDSReadViewConst.m in Sources */,
+				391FD00522CB046700921C1D /* XDSCatalogueViewController.m in Sources */,
+				391FCFF122CB046700921C1D /* CXMLDocument_PrivateExtensions.m in Sources */,
+				391FCFF322CB046700921C1D /* CXMLElement_CreationExtensions.m in Sources */,
+				391FCFFF22CB046700921C1D /* XDSReadPageViewController.m in Sources */,
+				391FCFE722CB046700921C1D /* CXMLDocument.m in Sources */,
+				391FCFED22CB046700921C1D /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				391FCFEE22CB046700921C1D /* CXMLNode_CreationExtensions.m in Sources */,
+				391FCFDB22CB046700921C1D /* XDSReadConfig.m in Sources */,
+				391FCFEF22CB046700921C1D /* CXMLDocument_CreationExtensions.m in Sources */,
+				391FD00422CB046700921C1D /* XDSCatalogueTabBarController.m in Sources */,
+				391FCFDD22CB046700921C1D /* XDSReaderUtil.m in Sources */,
+				391FCFEC22CB046700921C1D /* CXMLUnsupportedNode.m in Sources */,
 				391FCF3122CAF51E00921C1D /* main.m in Sources */,
+				391FCFE022CB046700921C1D /* XDSNoteModel.m in Sources */,
+				391FD00B22CB046700921C1D /* XDSReadRootView.m in Sources */,
+				391FD00622CB046700921C1D /* XDSMarkViewController.m in Sources */,
 				391FCF2322CAF51C00921C1D /* AppDelegate.m in Sources */,
+				391FD00922CB046700921C1D /* XDSNoteCell.m in Sources */,
+				391FCFE122CB046700921C1D /* XDSChapterModel.m in Sources */,
+				391FD00A22CB046700921C1D /* XDSReadSettingView.m in Sources */,
+				391FCFE622CB046700921C1D /* XDSReadView.m in Sources */,
+				391FCFF222CB046700921C1D /* CXHTMLDocument.m in Sources */,
+				391FD00022CB046700921C1D /* XDSPhotoBrowser.m in Sources */,
+				391FD01022CB046700921C1D /* XDSLightView.m in Sources */,
+				391FCFDE22CB046700921C1D /* XDSReaderGlobleConst.m in Sources */,
+				391FD01222CB046700921C1D /* XDSHaloButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,8 +995,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL9GCTA7BP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZCYReader/PrefixHeader.pch;
 				INFOPLIST_FILE = ZCYReader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,8 +1016,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL9GCTA7BP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZCYReader/PrefixHeader.pch;
 				INFOPLIST_FILE = ZCYReader/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,7 +1037,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,7 +1056,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -572,7 +1074,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,7 +1092,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CL2P256765;
 				INFOPLIST_FILE = ZCYReaderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcy.ZCYReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
