@@ -14,26 +14,25 @@
 
 @implementation XDSPhotoBrowser
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    //设置导航栏背景图片为一个空的image，这样就透明了
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    
-    //去掉透明后导航栏下边的黑边
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
-}
-
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
-//UIBarButtonItem *closeItem = [UIBarButtonItem alloc] initWithImage:[] style:<#(UIBarButtonItemStyle)#> target:<#(nullable id)#> action:<#(nullable SEL)#>
-    
     UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStyleDone target:self action:@selector(closeButtonClick:)];
     self.navigationItem.rightBarButtonItem = closeItem;
 }
 
-- (void)closeButtonClick:(UIBarButtonItem *)buttonItem {
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    //去掉透明后导航栏下边的黑边
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+}
+
+- (void)closeButtonClick:(UIBarButtonItem *)buttonItem
+{
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 

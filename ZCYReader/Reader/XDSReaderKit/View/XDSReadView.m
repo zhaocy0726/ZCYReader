@@ -41,7 +41,7 @@
 @end
 @implementation XDSReadView
 
-//MARK: -  override super method
+/// MARK:  -  override super method
 - (instancetype)initWithFrame:(CGRect)frame chapterNum:(NSInteger)chapterNum pageNum:(NSInteger)pageNum {
     if (self = [super initWithFrame:frame]) {
         self.chapterNum = chapterNum;
@@ -71,7 +71,7 @@
 }
 
 
-//MARK: - ABOUT UI UI相关
+/// MARK:  - ABOUT UI UI相关
 - (void)createUI{
     [self setBackgroundColor:[UIColor whiteColor]];
     [self addGestureRecognizer:({
@@ -98,20 +98,20 @@
 }
 
 //TODO: Magnifier View
--(void)showMagnifier{
+- (void)showMagnifier{
     if (!_magnifierView) {
         self.magnifierView = [[XDSMagnifierView alloc] init];
         self.magnifierView.readView = self;
         [self addSubview:self.magnifierView];
     }
 }
--(void)hiddenMagnifier{
+- (void)hiddenMagnifier{
     if (_magnifierView) {
         [self.magnifierView removeFromSuperview];
         self.magnifierView = nil;
     }
 }
-//MARK: - DELEGATE METHODS 代理方法
+/// MARK:  - DELEGATE METHODS 代理方法
 //TODO: DTAttributedTextContentViewDelegate
 - (UIView *)attributedTextContentView:(DTAttributedTextContentView *)attributedTextContentView
               viewForAttributedString:(NSAttributedString *)string
@@ -173,7 +173,7 @@
         }
 
         return imageView;
-    }else if ([attachment isKindOfClass:[DTObjectTextAttachment class]]) {
+    } else if ([attachment isKindOfClass:[DTObjectTextAttachment class]]) {
         // somecolorparameter has a HTML color
         NSString *colorName = [attachment.attributes objectForKey:@"somecolorparameter"];
         UIColor *someColor = DTColorCreateWithHTMLName(colorName);
@@ -215,15 +215,15 @@
     return YES; // draw standard background
 }
 
-//MARK: - ABOUT REQUEST 网络请求
+/// MARK:  - ABOUT REQUEST 网络请求
 
-//MARK: - ABOUT EVENTS 事件响应
+/// MARK:  - ABOUT EVENTS 事件响应
 - (void)handleImageTap:(UITapGestureRecognizer *)tap {
     DTLazyImageView *imageView = (DTLazyImageView *)tap.view;
     if (imageView.url && imageView.hyperLinkURL) {
 #warning show action sheet
         
-    }else if (imageView.url){
+    } else if (imageView.url) {
         [self showPhotoBrowserWithImage:imageView.url.path];
     }
 }
@@ -231,7 +231,7 @@
     XDSNoteModel *noteModel = [XDSNoteModel getNoteFromURL:button.URL];
     if (noteModel) {
         [XDSReaderUtil showAlertWithTitle:@"笔记内容" message:noteModel.content];
-    }else{
+    } else {
         NSLog(@"xxxxxxxxxxxxxxx");
         NSString *url = [button.URL.absoluteString stringByRemovingPercentEncoding];
         NSArray *pathAndId = [url componentsSeparatedByString:@"#"];
@@ -264,7 +264,7 @@
 
             NSLog(@"chapter = %zd, page = %zd", selectedChapterNum, page);
             
-        }else {
+        } else {
             [[UIApplication sharedApplication] openURL:button.URL];
         }
         
@@ -272,7 +272,7 @@
     }
 }
 
--(void)longPress:(UILongPressGestureRecognizer *)longPress{
+- (void)longPress:(UILongPressGestureRecognizer *)longPress{
     CGPoint point = [longPress locationInView:self.readTextView];
     [self hiddenMenu];
     if (longPress.state == UIGestureRecognizerStateBegan || longPress.state == UIGestureRecognizerStateChanged) {
@@ -299,7 +299,7 @@
         }
     }
 }
--(void)pan:(UIPanGestureRecognizer *)pan{
+- (void)pan:(UIPanGestureRecognizer *)pan{
     
     CGPoint point = [pan locationInView:self];
     [self hiddenMenu];
@@ -311,7 +311,7 @@
             if (CGRectContainsPoint(_leftRect, point)) {
                 _isDirectionRight = NO;   //从左侧滑动
             }
-            else{
+            else {
                 _isDirectionRight=  YES;    //从右侧滑动
             }
         }
@@ -322,7 +322,7 @@
         [self setNeedsDisplay];
         
         
-    }else{
+    } else {
         [self hiddenMagnifier];
         _selectState = NO;
         if (!CGRectEqualToRect(_menuRect, CGRectZero)) {
@@ -332,7 +332,7 @@
     
 }
 
--(void)showMenu {
+- (void)showMenu {
     if ([self becomeFirstResponder]) {
         UIMenuController *menuController = [UIMenuController sharedMenuController];
         UIMenuItem *menuItemCopy = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(menuCopy:)];
@@ -351,7 +351,7 @@
     return YES;
 }
 
--(void)hiddenMenu{
+- (void)hiddenMenu{
     [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
 }
 
@@ -399,7 +399,7 @@
 }
 
 #pragma mark Menu Function
--(void)menuCopy:(id)sender{
+- (void)menuCopy:(id)sender{
     [self hiddenMenu];
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     
@@ -407,7 +407,7 @@
     [XDSReaderUtil showAlertWithTitle:@"成功复制以下内容" message:pasteboard.string];
     
 }
--(void)menuNote:(id)sender{
+- (void)menuNote:(id)sender{
     [self hiddenMenu];
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"笔记"
                                                                              message:[_content substringWithRange:_selectRange]
@@ -442,13 +442,13 @@
     }
 }
 
--(void)menuShare:(id)sender{
+- (void)menuShare:(id)sender{
     [self hiddenMenu];
 }
-//MARK: - OTHER PRIVATE METHODS 私有方法
+/// MARK:  - OTHER PRIVATE METHODS 私有方法
 //TODO: 绘制选中区域左右节点
--(void)drawDotWithLeft:(CGRect)leftDocFrame right:(CGRect)rightDocFrame{
-    if (CGRectEqualToRect(CGRectZero, leftDocFrame) || (CGRectEqualToRect(CGRectZero, rightDocFrame))){
+- (void)drawDotWithLeft:(CGRect)leftDocFrame right:(CGRect)rightDocFrame{
+    if (CGRectEqualToRect(CGRectZero, leftDocFrame) || (CGRectEqualToRect(CGRectZero, rightDocFrame))) {
         return;
     }
     
@@ -514,7 +514,7 @@
     CGPathRelease(pathRef);
 }
 
--(void)cancelSelected{
+- (void)cancelSelected{
     if (_pathArray) {
         _pathArray = nil;
         [self hiddenMenu];
@@ -536,7 +536,7 @@
 }
 
 
-//MARK: - ABOUT MEMERY 内存管理
+/// MARK:  - ABOUT MEMERY 内存管理
 - (void)setReadAttributedContent:(NSMutableAttributedString *)readAttributedContent {
     _readAttributedContent = readAttributedContent;
     self.readTextView.attributedString = _readAttributedContent;
@@ -573,7 +573,7 @@
                     xEnd = xStart;
                     xStart = [layoutLine offsetForStringIndex:index-2];
                     (*selectRange).location = index - 2;
-                }else{
+                } else {
                     xEnd = [layoutLine offsetForStringIndex:index+2];
                     (*selectRange).location = index;
                 }
@@ -619,24 +619,24 @@
     
     //set selectedRange
     if (isDirectionRight) {
-        if (positionRange.location > (*selectRange).location){
+        if (positionRange.location > (*selectRange).location) {
             //在选择区域之间
             (*selectRange).length = positionRange.location - (*selectRange).location;
-        }else{
+        } else {
             //在选中区域左边
             (*selectRange).length = (*selectRange).location - positionRange.location;
             (*selectRange).location = positionRange.location;
         }
-    }else{
+    } else {
         if(positionRange.location < (*selectRange).location) {
             //在选中区域左边
             (*selectRange).length = ((*selectRange).location - positionRange.location + (*selectRange).length);
             (*selectRange).location = positionRange.location;
-        }else if(positionRange.location > (*selectRange).location + (*selectRange).length){
+        } else if(positionRange.location > (*selectRange).location + (*selectRange).length) {
             //在选中区域右边
             (*selectRange).location = (*selectRange).location + (*selectRange).length;
             (*selectRange).length = positionRange.location - (*selectRange).location;
-        }else{
+        } else {
             //在选择区域之间
             (*selectRange).length = (*selectRange).location + (*selectRange).length - positionRange.location;
             (*selectRange).location = positionRange.location;
@@ -655,7 +655,7 @@
         frame.size.width = maxX - minX;
         return @[NSStringFromCGRect(frame)];
         
-    }else{
+    } else {
 
         NSMutableArray *pathArray = [NSMutableArray arrayWithCapacity:0];
         
@@ -666,7 +666,7 @@
             NSRange stringRange = layoutLine.stringRange;
             if (stringRange.location < firstIndex && layoutLine != firstLine) {
                 continue;
-            }else if (stringRange.location > lastIndex){
+            } else if (stringRange.location > lastIndex) {
                 continue;
             }
             
@@ -675,10 +675,10 @@
                 CGFloat xStart = [layoutLine offsetForStringIndex:firstIndex];
                 lineFrame.size.width = (CGRectGetWidth(lineFrame) - (xStart - CGRectGetMinX(lineFrame)));
                 lineFrame.origin.x += xStart;
-            }else if(layoutLine == lastLine){
+            } else if(layoutLine == lastLine) {
                 CGFloat xStart = [layoutLine offsetForStringIndex:lastIndex];
                 lineFrame.size.width = (CGRectGetWidth(lineFrame) - (CGRectGetMaxX(lineFrame)- CGRectGetMinX(lineFrame) - xStart));
-            }else{}
+            } else {}
             [pathArray addObject:NSStringFromCGRect(lineFrame)];
 
         }

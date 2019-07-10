@@ -25,9 +25,9 @@
     return self;
 }
 
-//MARK: -  override super method
+/// MARK:  -  override super method
 
-//MARK: - ABOUT UI UI相关
+/// MARK:  - ABOUT UI UI相关
 - (void)createUI{
     CGFloat buttonW = 50;
     // 返回
@@ -51,11 +51,11 @@
         button;
     });
 }
-//MARK: - DELEGATE METHODS 代理方法
+/// MARK:  - DELEGATE METHODS 代理方法
 
-//MARK: - ABOUT REQUEST 网络请求
+/// MARK:  - ABOUT REQUEST 网络请求
 
-//MARK: - ABOUT EVENTS 事件响应
+/// MARK:  - ABOUT EVENTS 事件响应
 - (void)closeButtonClick:(UIButton *)button{
     [[XDSReadManager sharedManager] closeReadView];
 }
@@ -63,11 +63,11 @@
     [[XDSReadManager sharedManager] addBookMark];
     [self updateMarkButtonState];
 }
-//MARK: - OTHER PRIVATE METHODS 私有方法
+/// MARK:  - OTHER PRIVATE METHODS 私有方法
 - (void)updateMarkButtonState{
     self.markButton.selected = [CURRENT_RECORD.chapterModel isMarkAtPage:CURRENT_RECORD.currentPage];
 }
-//MARK: - ABOUT MEMERY 内存管理
+/// MARK:  - ABOUT MEMERY 内存管理
 - (void)dataInit{
     
 }

@@ -21,7 +21,7 @@ NSString *const kXDSRecordModelChapterModelEncodeKey = @"chapterModel";
 NSString *const kXDSRecordModelCurrentChapterEncodeKey = @"currentChapter";
 NSString *const kXDSRecordModelLocationEncodeKey = @"location";
 
--(id)copyWithZone:(NSZone *)zone{
+- (id)copyWithZone:(NSZone *)zone{
     XDSRecordModel *recordModel = [[XDSRecordModel allocWithZone:zone]init];
     recordModel.chapterModel = [self.chapterModel copy];
     recordModel.location = self.location;
@@ -29,12 +29,12 @@ NSString *const kXDSRecordModelLocationEncodeKey = @"location";
     return recordModel;
 }
 
--(void)encodeWithCoder:(NSCoder *)aCoder{
+- (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.chapterModel forKey:kXDSRecordModelChapterModelEncodeKey];
     [aCoder encodeInteger:self.location forKey:kXDSRecordModelLocationEncodeKey];
     [aCoder encodeInteger:self.currentChapter forKey:kXDSRecordModelCurrentChapterEncodeKey];
 }
--(id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
     if (self) {
         self.chapterModel = [aDecoder decodeObjectForKey:kXDSRecordModelChapterModelEncodeKey];
@@ -59,7 +59,7 @@ NSString *const kXDSRecordModelLocationEncodeKey = @"location";
     NSInteger page = 0;
     if (self.location == [self.chapterModel.pageLocations.lastObject integerValue]) {
         page = self.chapterModel.pageLocations.count - 1;
-    }else{
+    } else {
         for (int i = 0; i < self.chapterModel.pageLocations.count; i ++) {
             NSInteger location = [self.chapterModel.pageLocations[i] integerValue];
             if (self.location < location) {

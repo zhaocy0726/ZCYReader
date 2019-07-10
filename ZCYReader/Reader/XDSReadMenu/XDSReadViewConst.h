@@ -28,7 +28,7 @@ UIKIT_EXTERN CGFloat const kStatusBarHeight;// StatusBar高度
 #define FONT_SYSTEM_XDS_12 [UIFont systemFontOfSize:12]
 #define FONT_SYSTEM_XDS_18 [UIFont systemFontOfSize:12]
 
-//MARK: -- 颜色支持
+/// MARK:  -- 颜色支持
 #define TEXT_COLOR_XDS_1 RGB_XDS(51, 51, 51)/// 灰色
 #define TEXT_COLOR_XDS_2 RGB_XDS(253, 85, 103)/// 粉红色
 #define TEXT_COLOR_XDS_3 RGB_XDS(127, 136, 138)/// 阅读上下状态栏颜色
@@ -38,7 +38,7 @@ UIKIT_EXTERN CGFloat const kStatusBarHeight;// StatusBar高度
 
 
 
-//MARK: -- 阅读背景颜色支持
+/// MARK:  -- 阅读背景颜色支持
 #define RGB_XDS(__R__, __G__, __B__) [UIColor colorWithRed:(__R__)/255.0 green:(__G__)/255.0 blue:(__B__)/255.0 alpha:1.0]
 #define READ_BACKGROUND_COLOC_1 RGB_XDS(238, 224, 202)
 #define READ_BACKGROUND_COLOC_2 RGB_XDS(205, 239, 205)
@@ -46,11 +46,11 @@ UIKIT_EXTERN CGFloat const kStatusBarHeight;// StatusBar高度
 #define READ_BACKGROUND_COLOC_4 RGB_XDS(251, 237, 199)// 牛皮黄
 #define READ_BACKGROUND_COLOC_5 RGB_XDS(51, 51, 51)
 
-//MARK: -- 菜单背景颜色
+/// MARK:  -- 菜单背景颜色
 #define READ_BACKGROUND_COLOC [[UIColor blackColor] colorWithAlphaComponent:0.85f]
 
 
-//MARK: -- 尺寸计算 以iPhone6为比例
+/// MARK:  -- 尺寸计算 以iPhone6为比例
 #define SIZE_WIDHT_XDS(__size__) __size__ * (DEVICE_MAIN_SCREEN_WIDTH_XDSR / 375)
 #define SIZE_HEIGHT_XDS(__size__) __size__ * (DEVICE_MAIN_SCREEN_HEIGHT_XDSR / 667)
 

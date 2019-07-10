@@ -367,11 +367,11 @@
 		391FCF5A22CB046600921C1D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				391FCF5B22CB046600921C1D /* XDSReadOperation.h */,
-				391FCF5C22CB046600921C1D /* XDSReadManager.m */,
-				391FCF5D22CB046600921C1D /* XDSReadConfig.m */,
 				391FCF5E22CB046600921C1D /* XDSReadConfig.h */,
+				391FCF5D22CB046600921C1D /* XDSReadConfig.m */,
 				391FCF5F22CB046600921C1D /* XDSReadManager.h */,
+				391FCF5C22CB046600921C1D /* XDSReadManager.m */,
+				391FCF5B22CB046600921C1D /* XDSReadOperation.h */,
 				391FCF6022CB046600921C1D /* XDSReadOperation.m */,
 			);
 			path = Core;
@@ -382,9 +382,9 @@
 			children = (
 				391FCF6222CB046600921C1D /* XDSReaderDelegate.h */,
 				391FCF6322CB046600921C1D /* XDSReaderGlobleConst.h */,
-				391FCF6422CB046600921C1D /* XDSReaderUtil.m */,
 				391FCF6522CB046600921C1D /* XDSReaderGlobleConst.m */,
 				391FCF6622CB046600921C1D /* XDSReaderUtil.h */,
+				391FCF6422CB046600921C1D /* XDSReaderUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -392,16 +392,16 @@
 		391FCF6722CB046600921C1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				391FCF6822CB046600921C1D /* XDSRecordModel.m */,
-				391FCF6922CB046600921C1D /* XDSNoteModel.m */,
+				391FCF6C22CB046600921C1D /* XDSBookModel.h */,
+				391FCF7122CB046600921C1D /* XDSBookModel.m */,
+				391FCF6E22CB046600921C1D /* XDSChapterModel.h */,
 				391FCF6A22CB046600921C1D /* XDSChapterModel.m */,
 				391FCF6B22CB046600921C1D /* XDSMarkModel.h */,
-				391FCF6C22CB046600921C1D /* XDSBookModel.h */,
-				391FCF6D22CB046600921C1D /* XDSRecordModel.h */,
-				391FCF6E22CB046600921C1D /* XDSChapterModel.h */,
 				391FCF6F22CB046600921C1D /* XDSMarkModel.m */,
 				391FCF7022CB046600921C1D /* XDSNoteModel.h */,
-				391FCF7122CB046600921C1D /* XDSBookModel.m */,
+				391FCF6922CB046600921C1D /* XDSNoteModel.m */,
+				391FCF6D22CB046600921C1D /* XDSRecordModel.h */,
+				391FCF6822CB046600921C1D /* XDSRecordModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,12 +409,12 @@
 		391FCF7222CB046600921C1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				391FCF7622CB046600921C1D /* UIControl+XDSHyperLink.h */,
+				391FCF7522CB046600921C1D /* UIControl+XDSHyperLink.m */,
+				391FCF7822CB046600921C1D /* XDSMagnifierView.h */,
 				391FCF7322CB046600921C1D /* XDSMagnifierView.m */,
 				391FCF7422CB046600921C1D /* XDSReadView.h */,
-				391FCF7522CB046600921C1D /* UIControl+XDSHyperLink.m */,
-				391FCF7622CB046600921C1D /* UIControl+XDSHyperLink.h */,
 				391FCF7722CB046600921C1D /* XDSReadView.m */,
-				391FCF7822CB046600921C1D /* XDSMagnifierView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,16 +422,16 @@
 		391FCF7A22CB046600921C1D /* External */ = {
 			isa = PBXGroup;
 			children = (
-				391FCF7B22CB046600921C1D /* UIImage+ImageEffects.h */,
-				391FCF7C22CB046600921C1D /* NSString+HTML.h */,
-				391FCF7D22CB046600921C1D /* GTMNSString+HTML.h */,
-				391FCF7E22CB046600921C1D /* UIView+XDSHyperLink.h */,
-				391FCF7F22CB046600921C1D /* TouchXML */,
 				391FCF9F22CB046600921C1D /* GTMDefines.h */,
-				391FCFA022CB046600921C1D /* NSString+HTML.m */,
-				391FCFA122CB046600921C1D /* UIImage+ImageEffects.m */,
-				391FCFA222CB046600921C1D /* UIView+XDSHyperLink.m */,
+				391FCF7D22CB046600921C1D /* GTMNSString+HTML.h */,
 				391FCFA322CB046600921C1D /* GTMNSString+HTML.m */,
+				391FCF7C22CB046600921C1D /* NSString+HTML.h */,
+				391FCFA022CB046600921C1D /* NSString+HTML.m */,
+				391FCF7F22CB046600921C1D /* TouchXML */,
+				391FCF7B22CB046600921C1D /* UIImage+ImageEffects.h */,
+				391FCFA122CB046600921C1D /* UIImage+ImageEffects.m */,
+				391FCF7E22CB046600921C1D /* UIView+XDSHyperLink.h */,
+				391FCFA222CB046600921C1D /* UIView+XDSHyperLink.m */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -502,12 +502,12 @@
 		391FCFAA22CB046600921C1D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				391FCFAB22CB046600921C1D /* XDSReadViewController.m */,
-				391FCFAC22CB046600921C1D /* XDSReadPageViewController.h */,
 				391FCFAD22CB046600921C1D /* XDSPhotoBrowser.h */,
+				391FCFB022CB046600921C1D /* XDSPhotoBrowser.m */,
+				391FCFAC22CB046600921C1D /* XDSReadPageViewController.h */,
 				391FCFAE22CB046600921C1D /* XDSReadPageViewController.m */,
 				391FCFAF22CB046600921C1D /* XDSReadViewController.h */,
-				391FCFB022CB046600921C1D /* XDSPhotoBrowser.m */,
+				391FCFAB22CB046600921C1D /* XDSReadViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -515,25 +515,25 @@
 		391FCFB122CB046600921C1D /* XDSReadMenu */ = {
 			isa = PBXGroup;
 			children = (
-				391FCFB222CB046600921C1D /* XDSReadMenu.m */,
 				391FCFB322CB046600921C1D /* Catologue */,
-				391FCFC322CB046700921C1D /* XDSReadSettingView.m */,
-				391FCFC422CB046700921C1D /* XDSReadRootView.m */,
-				391FCFC522CB046700921C1D /* XDSMenuTopView.m */,
 				391FCFC622CB046700921C1D /* XDSHaloButton.h */,
-				391FCFC722CB046700921C1D /* XDSReadViewConst.m */,
-				391FCFC822CB046700921C1D /* XDSMenuBottomView.m */,
-				391FCFC922CB046700921C1D /* XDSReadMenu.xcassets */,
-				391FCFCA22CB046700921C1D /* XDSLightView.m */,
-				391FCFCB22CB046700921C1D /* YGPulseView */,
-				391FCFCE22CB046700921C1D /* XDSReadRootView.h */,
-				391FCFCF22CB046700921C1D /* XDSReadSettingView.h */,
-				391FCFD022CB046700921C1D /* XDSReadMenu.h */,
-				391FCFD122CB046700921C1D /* XDSReadViewConst.h */,
 				391FCFD222CB046700921C1D /* XDSHaloButton.m */,
-				391FCFD322CB046700921C1D /* XDSMenuTopView.h */,
-				391FCFD422CB046700921C1D /* XDSMenuBottomView.h */,
 				391FCFD522CB046700921C1D /* XDSLightView.h */,
+				391FCFCA22CB046700921C1D /* XDSLightView.m */,
+				391FCFD422CB046700921C1D /* XDSMenuBottomView.h */,
+				391FCFC822CB046700921C1D /* XDSMenuBottomView.m */,
+				391FCFD322CB046700921C1D /* XDSMenuTopView.h */,
+				391FCFC522CB046700921C1D /* XDSMenuTopView.m */,
+				391FCFD022CB046700921C1D /* XDSReadMenu.h */,
+				391FCFB222CB046600921C1D /* XDSReadMenu.m */,
+				391FCFC922CB046700921C1D /* XDSReadMenu.xcassets */,
+				391FCFCE22CB046700921C1D /* XDSReadRootView.h */,
+				391FCFC422CB046700921C1D /* XDSReadRootView.m */,
+				391FCFCF22CB046700921C1D /* XDSReadSettingView.h */,
+				391FCFC322CB046700921C1D /* XDSReadSettingView.m */,
+				391FCFD122CB046700921C1D /* XDSReadViewConst.h */,
+				391FCFC722CB046700921C1D /* XDSReadViewConst.m */,
+				391FCFCB22CB046700921C1D /* YGPulseView */,
 			);
 			path = XDSReadMenu;
 			sourceTree = "<group>";

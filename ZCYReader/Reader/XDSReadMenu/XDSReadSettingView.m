@@ -31,9 +31,9 @@ NSInteger const kSetingFontSizeButtonTag = 30;
     }
     return self;
 }
-//MARK: -  override super method
+/// MARK:  -  override super method
 
-//MARK: - ABOUT UI UI相关
+/// MARK:  - ABOUT UI UI相关
 - (void)createUI{
     //主题
     [self createThemesView];
@@ -181,11 +181,11 @@ NSInteger const kSetingFontSizeButtonTag = 30;
     [pulsFontSizeButton addTarget:self action:@selector(fontSizeButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:pulsFontSizeButton];
 }
-//MARK: - DELEGATE METHODS 代理方法
+/// MARK:  - DELEGATE METHODS 代理方法
 
-//MARK: - ABOUT REQUEST 网络请求
+/// MARK:  - ABOUT REQUEST 网络请求
 
-//MARK: - ABOUT EVENTS 事件响应
+/// MARK:  - ABOUT EVENTS 事件响应
 - (void)themeButtonClick:(XDSHaloButton *)button{
     for (int i = 0; i < _themsArray.count; i ++) {
         XDSHaloButton *haloBtn = [self viewWithTag:kSetingThemeButtonTag + i];
@@ -234,9 +234,9 @@ NSInteger const kSetingFontSizeButtonTag = 30;
         }
     }
 }
-//MARK: - OTHER PRIVATE METHODS 私有方法
+/// MARK:  - OTHER PRIVATE METHODS 私有方法
 
-//MARK: - ABOUT MEMERY 内存管理
+/// MARK:  - ABOUT MEMERY 内存管理
 - (void)dataInit{
     self.themsArray = @[[UIColor whiteColor],
                         READ_BACKGROUND_COLOC_1,

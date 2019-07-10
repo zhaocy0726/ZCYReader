@@ -17,7 +17,7 @@
 
 @end
 
-typedef  NS_ENUM(NSInteger,LPPEBookType){
+typedef  NS_ENUM(NSInteger,LPPEBookType) {
     LPPEBookTypeTxt,
     LPPEBookTypeEpub,
 };

@@ -64,7 +64,7 @@ CGFloat const kCatalogueTableViewCellHeight = 44.f;
     
     if (catalogueModel.catalogueId.length) {
         cell.textLabel.text = [@"    " stringByAppendingString:catalogueModel.catalogueName];
-    }else{
+    } else {
         cell.textLabel.text = catalogueModel.catalogueName;
     }
     return cell;
@@ -72,7 +72,7 @@ CGFloat const kCatalogueTableViewCellHeight = 44.f;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (_cvDelegate && [_cvDelegate respondsToSelector:@selector(catalogueViewDidSelecteCatalogue:)]){
+    if (_cvDelegate && [_cvDelegate respondsToSelector:@selector(catalogueViewDidSelecteCatalogue:)]) {
         XDSChapterModel *chapterModel = CURRENT_BOOK_MODEL.chapters[indexPath.section];
         XDSCatalogueModel *catalogueModel = chapterModel.catalogueModelArray[indexPath.row];
         [_cvDelegate catalogueViewDidSelecteCatalogue:catalogueModel];

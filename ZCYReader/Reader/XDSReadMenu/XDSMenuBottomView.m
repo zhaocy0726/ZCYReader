@@ -27,7 +27,7 @@
     }
     return self;
 }
-//MARK: - ABOUT UI UI相关
+/// MARK:  - ABOUT UI UI相关
 - (void)createUI{
     
     // 上一章
@@ -104,11 +104,11 @@
         _slider.value = program;
     }
 }
-//MARK: - DELEGATE METHODS 代理方法
+/// MARK:  - DELEGATE METHODS 代理方法
 
-//MARK: - ABOUT REQUEST 网络请求
+/// MARK:  - ABOUT REQUEST 网络请求
 
-//MARK: - ABOUT EVENTS 事件响应
+/// MARK:  - ABOUT EVENTS 事件响应
 //上一章
 - (void)previousChapterButtonClick:(UIButton *)button{
     if ([self.bvDelegate respondsToSelector:@selector(menuBottomView:didSelectedPreviousButton:)]) {
@@ -132,9 +132,9 @@
         [self.bvDelegate menuBottomView:self didSelectedFuctionButton:button];
     }
 }
-//MARK: - OTHER PRIVATE METHODS 私有方法
+/// MARK:  - OTHER PRIVATE METHODS 私有方法
 
-//MARK: - ABOUT MEMERY 内存管理
+/// MARK:  - ABOUT MEMERY 内存管理
 - (void)dataInit{
     self.funcIcons = @[@"read_bar_0",@"read_bar_1",@"read_bar_2"];
 }

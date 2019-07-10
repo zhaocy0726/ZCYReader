@@ -21,7 +21,7 @@
     
     NSArray* match = [reg matchesInString:content options:NSMatchingReportCompletion range:NSMakeRange(0, [content length])];
     
-    if (match.count != 0){
+    if (match.count != 0) {
         __block NSRange lastRange = NSMakeRange(0, 0);
         [match enumerateObjectsUsingBlock:^(NSTextCheckingResult *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSRange range = [obj range];
@@ -55,7 +55,7 @@
             [*chapters addObject:model];
             lastRange = range;
         }];
-    }else{
+    } else {
         XDSChapterModel *model = [[XDSChapterModel alloc] init];
         model.originContent = content;
         [*chapters addObject:model];
@@ -211,7 +211,7 @@
         //根据opf文件的href获取到ncx文件中的中对应的目录名称
         NSArray* navPoints = [ncxDoc nodesForXPath:xpath namespaceMappings:[NSDictionary dictionaryWithObject:@"http://www.daisy.org/z3986/2005/ncx/" forKey:@"ncx"] error:nil];
         
-        if([navPoints count]!=0){
+        if([navPoints count]!=0) {
             CXMLElement *titleElement = navPoints.firstObject;
             [titleDictionary setValue:[titleElement stringValue] forKey:href];
         }
@@ -219,7 +219,7 @@
     
     NSArray *itemRefsArray = [opfDoc nodesForXPath:@"//opf:itemref" namespaceMappings:[NSDictionary dictionaryWithObject:@"http://www.idpf.org/2007/opf" forKey:@"opf"] error:nil];
     NSMutableArray *chapters = [NSMutableArray array];
-    for (CXMLElement* element in itemRefsArray){
+    for (CXMLElement* element in itemRefsArray) {
         NSString* chapHref = [itemDictionary valueForKey:[[element attributeForName:@"idref"] stringValue]];
         if (!chapHref.length) {
             continue;
@@ -288,7 +288,7 @@
             chapter.chapterSrc = chapterSrc;
             [chapter setCatalogueModelArray:catalogueModelArrayInChapter];
             [chapters addObject:chapter];
-        }else {
+        } else {
             catalogueModel.catalogueId = links.lastObject;
         }
         

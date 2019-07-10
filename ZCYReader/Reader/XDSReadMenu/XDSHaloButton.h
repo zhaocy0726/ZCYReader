@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// 颜色
 @interface XDSHaloButton : UIControl
 
 @property (strong, nonatomic) UIImageView *imageView;// imageView

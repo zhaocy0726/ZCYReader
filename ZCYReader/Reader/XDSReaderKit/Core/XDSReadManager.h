@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define CURRENT_BOOK_MODEL [XDSReadManager sharedManager].bookModel
-#define CURRENT_RECORD [XDSReadManager sharedManager].bookModel.record
+#define CURRENT_BOOK_MODEL [XDSReadManager sharedManager].bookModel // 图书详情
+#define CURRENT_RECORD [XDSReadManager sharedManager].bookModel.record // 阅读进度
 
 @protocol XDSReadManagerDelegate;
 

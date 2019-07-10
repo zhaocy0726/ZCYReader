@@ -19,7 +19,7 @@
 
 @implementation XDSLightView
 
-//MARK: -  override super method
+/// MARK:  -  override super method
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self dataInit];
@@ -30,7 +30,7 @@
 
 
 
-//MARK: - ABOUT UI UI相关
+/// MARK:  - ABOUT UI UI相关
 - (void)createUI{
     
     self.titleLabel = ({
@@ -79,17 +79,17 @@
         slider;
     });
 }
-//MARK: - DELEGATE METHODS 代理方法
+/// MARK:  - DELEGATE METHODS 代理方法
 
-//MARK: - ABOUT REQUEST 网络请求
+/// MARK:  - ABOUT REQUEST 网络请求
 
-//MARK: - ABOUT EVENTS 事件响应
+/// MARK:  - ABOUT EVENTS 事件响应
 - (void)sliderValueChanged:(UISlider *)slider{
     [UIScreen mainScreen].brightness = slider.value;
 }
-//MARK: - OTHER PRIVATE METHODS 私有方法
+/// MARK:  - OTHER PRIVATE METHODS 私有方法
 
-//MARK: - ABOUT MEMERY 内存管理
+/// MARK:  - ABOUT MEMERY 内存管理
 - (void)dataInit{
     
 }

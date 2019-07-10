@@ -152,13 +152,13 @@ NSString *const kXDSBookModelRecordEncodeKey = @"record";
             model.resource = url;
             [XDSBookModel updateLocalModel:model url:url];
             return model;
-        }else if ([[key pathExtension].lowercaseString isEqualToString:@"epub"]){
+        } else if ([[key pathExtension].lowercaseString isEqualToString:@"epub"]) {
             NSLog(@"this is epub");
             XDSBookModel *model = [[XDSBookModel alloc] initWithePub:url.path];
             model.resource = url;
             [XDSBookModel updateLocalModel:model url:url];
             return model;
-        }else{
+        } else {
             @throw [NSException exceptionWithName:@"FileException" reason:@"文件格式错误" userInfo:nil];
         }
         

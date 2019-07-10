@@ -62,14 +62,16 @@ NSString *const kReadConfigThemeEncodeKey = @"cacheTheme";
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:kReadConfigEncodeKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
--(void)encodeWithCoder:(NSCoder *)aCoder{
+
+- (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeDouble:self.cachefontSize forKey:kReadConfigFontSizeEncodeKey];
     [aCoder encodeObject:self.cacheFontName forKey:kReadConfigFontNameEncodeKey];
     [aCoder encodeDouble:self.cacheLineSpace forKey:kReadConfigLineSpaceEncodeKey];
     [aCoder encodeObject:self.cacheTextColor forKey:kReadConfigTextColorEncodeKey];
     [aCoder encodeObject:self.cacheTheme forKey:kReadConfigThemeEncodeKey];
 }
--(id)initWithCoder:(NSCoder *)aDecoder{
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
     if (self) {
         self.cachefontSize = [aDecoder decodeDoubleForKey:kReadConfigFontSizeEncodeKey];
@@ -147,4 +149,5 @@ NSString *const kReadConfigThemeEncodeKey = @"cacheTheme";
             self.currentLineSpace == config.currentLineSpace &&
             self.currentTheme == config.currentTheme);
 }
+
 @end

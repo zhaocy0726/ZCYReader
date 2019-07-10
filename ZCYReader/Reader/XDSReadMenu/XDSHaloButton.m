@@ -62,14 +62,14 @@
     if (selected) {
         if (self.selectImage) {
             self.imageView.image = self.selectImage;
-        }else{
+        } else {
             self.imageView.layer.borderColor = TEXT_COLOR_XDS_2.CGColor;
             self.imageView.layer.borderWidth = 2.0;
         }
-    }else{
+    } else {
         if (self.nomalImage) {
             self.imageView.image = self.nomalImage;
-        }else{
+        } else {
             self.imageView.layer.borderColor = [UIColor clearColor].CGColor;
             self.imageView.layer.borderWidth = 2.0;
         }

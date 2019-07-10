@@ -34,7 +34,7 @@
     
     if (CURRENT_BOOK_MODEL.chapterContainNotes.count) {
         self.noDataView.hidden = YES;
-    }else{
+    } else {
         self.noDataView.hidden = NO;
     }
 }
@@ -63,7 +63,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (_cvDelegate && [_cvDelegate respondsToSelector:@selector(catalogueViewDidSelectedNote:)]){
+    if (_cvDelegate && [_cvDelegate respondsToSelector:@selector(catalogueViewDidSelectedNote:)]) {
         XDSNoteModel *noteModel = CURRENT_BOOK_MODEL.chapterContainNotes[indexPath.section].notes[indexPath.row];
         [_cvDelegate catalogueViewDidSelectedNote:noteModel];
     }

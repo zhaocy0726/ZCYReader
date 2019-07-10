@@ -21,14 +21,14 @@ NSString *const kXDSCatalogueModelLinkEncodeKey = @"link";
 NSString *const kXDSCatalogueModelCatalogueIdEncodeKey = @"catalogueId";
 NSString *const kXDSCatalogueModelChapterEncodeKey = @"chapter";
 
--(void)encodeWithCoder:(NSCoder *)aCoder{
+- (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.catalogueName forKey:kXDSCatalogueModelCatalogueNameEncodeKey];
     [aCoder encodeObject:self.link forKey:kXDSCatalogueModelLinkEncodeKey];
     [aCoder encodeObject:self.catalogueId forKey:kXDSCatalogueModelCatalogueIdEncodeKey];
     [aCoder encodeInt:(int)self.chapter forKey:kXDSCatalogueModelChapterEncodeKey];
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
     if (self) {
         self.catalogueName = [aDecoder decodeObjectForKey:kXDSCatalogueModelCatalogueNameEncodeKey];
@@ -79,7 +79,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     _catalogueModelArray = catalogueModelArray;
 }
 
--(void)paginateEpubWithBounds:(CGRect)bounds{
+- (void)paginateEpubWithBounds:(CGRect)bounds{
     @autoreleasepool {
         //        bounds.size.height = bounds.size.height - 20;
         self.showBounds = bounds;
@@ -162,7 +162,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
         NSString *imagePath = [@"src=\"" stringByAppendingString:OEBPSUrl];
         html = [html stringByReplacingOccurrencesOfString:@"src=\".." withString:imagePath];
         html = [html stringByReplacingOccurrencesOfString:@"<p></p>" withString:@""];
-    }else if (self.originContent.length) {
+    } else if (self.originContent.length) {
         //load txt content
         html = self.originContent;
         html = [@"<p>" stringByAppendingString:html];
@@ -258,7 +258,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     NSString *idNodeRegex = @"(<)([^>]*)(id=)([^>]+)>";
     NSRange range = NSMakeRange(0, mutableHtml.length);
     range = [mutableHtml rangeOfString:idNodeRegex options:NSRegularExpressionSearch range:range];
-    while (range.location != NSNotFound){
+    while (range.location != NSNotFound) {
         @autoreleasepool {
             
             NSString *idNoteString = [mutableHtml substringWithRange:range];
@@ -287,7 +287,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     NSRange range = NSMakeRange(0, html.length);
     range = [html rangeOfString:regex options:NSRegularExpressionSearch range:range];
     
-    while (range.location != NSNotFound){
+    while (range.location != NSNotFound) {
         
         @autoreleasepool {
             
@@ -337,7 +337,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
                 break;
             }
         }
-    }else{// doesn't contain mark 记录书签信息
+    } else {// doesn't contain mark 记录书签信息
         [marks addObject:markModel];
     }
     self.marks = marks;
@@ -398,7 +398,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
             //note location 在page内部
             [notes addObject:noteModel];
             
-        }else if (noteLocation < location && noteLocation + noteLenght > location){
+        } else if (noteLocation < location && noteLocation + noteLenght > location) {
             //note location 在page之前
             [notes addObject:noteModel];
         }
@@ -423,7 +423,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     return _currentConfig;
 }
 
--(id)copyWithZone:(NSZone *)zone{
+- (id)copyWithZone:(NSZone *)zone{
     XDSChapterModel *model = [[XDSChapterModel allocWithZone:zone] init];
     model.chapterName = self.chapterName;
     model.chapterSrc = self.chapterSrc;
@@ -441,7 +441,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     model.marks = self.marks;
     return model;
 }
--(void)encodeWithCoder:(NSCoder *)aCoder{
+- (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.chapterName forKey:kXDSChapterModelChapterNameEncodeKey];
     [aCoder encodeObject:self.chapterSrc forKey:kXDSChapterModelChapterSrcEncodeKey];
     [aCoder encodeObject:self.originContent forKey:kXDSChapterModelOriginContentEncodeKey];
@@ -451,7 +451,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     [aCoder encodeObject:self.notes forKey:kXDSChapterModelNotesEncodeKey];
     [aCoder encodeObject:self.marks forKey:kXDSChapterModelMarksEncodeKey];
 }
--(id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
     if (self) {
         self.chapterName = [aDecoder decodeObjectForKey:kXDSChapterModelChapterNameEncodeKey];

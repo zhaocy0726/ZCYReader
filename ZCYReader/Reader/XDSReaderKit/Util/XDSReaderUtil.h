@@ -24,7 +24,7 @@
 
 + (NSString *)encodeWithURL:(NSURL *)url;
 
-+(UIButton *)commonButtonSEL:(SEL)sel target:(id)target;
++ (UIButton *)commonButtonSEL:(SEL)sel target:(id)target;
 
 + (void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
 

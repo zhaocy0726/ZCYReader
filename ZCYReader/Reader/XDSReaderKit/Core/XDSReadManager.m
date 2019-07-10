@@ -34,7 +34,7 @@ static XDSReadManager *readManager;
                                DEVICE_MAIN_SCREEN_HEIGHT_XDSR-kReadViewMarginTop-kReadViewMarginBottom);
     return bounds;
 }
-//MARK: - //获取对于章节页码的radViewController
+/// MARK:  - //获取对于章节页码的radViewController
 - (XDSReadViewController *)readViewWithChapter:(NSInteger *)chapter
                                           page:(NSInteger *)page
                                        pageUrl:(NSString *)pageUrl{
@@ -47,7 +47,7 @@ static XDSReadManager *readManager;
         }
     }
     
-    if (*page < 0){
+    if (*page < 0) {
         *page = currentChapterModel.pageCount - 1;
     }
     
@@ -64,7 +64,7 @@ static XDSReadManager *readManager;
         [CURRENT_BOOK_MODEL loadContentInChapter:chapterModel];
     }
 }
-//MARK: - 跳转到指定章节（上一章，下一章，slider，目录）
+/// MARK:  - 跳转到指定章节（上一章，下一章，slider，目录）
 - (void)readViewJumpToChapter:(NSInteger)chapter page:(NSInteger)page{
     //跳转到指定章节
     if (self.rmDelegate && [self.rmDelegate respondsToSelector:@selector(readViewJumpToChapter:page:)]) {
@@ -73,7 +73,7 @@ static XDSReadManager *readManager;
     //更新阅读记录
     [self updateReadModelWithChapter:chapter page:page];
 }
-//MARK: - 跳转到指定笔记，因为是笔记是基于位置查找的，使用page查找可能出错
+/// MARK:  - 跳转到指定笔记，因为是笔记是基于位置查找的，使用page查找可能出错
 - (void)readViewJumpToNote:(XDSNoteModel *)note{
     XDSChapterModel *currentChapterModel = _bookModel.chapters[note.chapter];
     if (currentChapterModel.isReadConfigChanged) {
@@ -82,7 +82,7 @@ static XDSReadManager *readManager;
     [self readViewJumpToChapter:note.chapter page:note.page];
 }
 
-//MARK: - 跳转到指定书签，因为是书签是基于位置查找的，使用page查找可能出错
+/// MARK:  - 跳转到指定书签，因为是书签是基于位置查找的，使用page查找可能出错
 - (void)readViewJumpToMark:(XDSMarkModel *)mark{
     
     XDSChapterModel *currentChapterModel = _bookModel.chapters[mark.chapter];
@@ -92,7 +92,7 @@ static XDSReadManager *readManager;
     
     [self readViewJumpToChapter:mark.chapter page:mark.page];
 }
-//MARK: - 设置字体
+/// MARK:  - 设置字体
 - (void)configReadFontSize:(BOOL)plus{
     if ([XDSReadConfig shareInstance].currentFontSize < 1) {
         [XDSReadConfig shareInstance].currentFontSize = [XDSReadConfig shareInstance].cachefontSize;
@@ -102,9 +102,9 @@ static XDSReadManager *readManager;
         if (floor([XDSReadConfig shareInstance].currentFontSize) >= floor(kXDSReadViewMaxFontSize)) {
             [XDSReadConfig shareInstance].currentFontSize = kXDSReadViewMaxFontSize;
         }
-    }else{
+    } else {
         [XDSReadConfig shareInstance].currentFontSize--;
-        if (floor([XDSReadConfig shareInstance].currentFontSize) <= floor(kXDSReadViewMinFontSize)){
+        if (floor([XDSReadConfig shareInstance].currentFontSize) <= floor(kXDSReadViewMinFontSize)) {
             [XDSReadConfig shareInstance].currentFontSize = kXDSReadViewMinFontSize;
         }
     }
@@ -142,8 +142,8 @@ static XDSReadManager *readManager;
         [self.rmDelegate readViewThemeDidChanged];
     }
 }
-//MARK: - 更新阅读记录
--(void)updateReadModelWithChapter:(NSInteger)chapter page:(NSInteger)page{
+/// MARK:  - 更新阅读记录
+- (void)updateReadModelWithChapter:(NSInteger)chapter page:(NSInteger)page{
     if (chapter < 0) {
         chapter = 0;
     }
@@ -161,7 +161,7 @@ static XDSReadManager *readManager;
 }
 
 
-//MARK: - 关闭阅读器
+/// MARK:  - 关闭阅读器
 - (void)closeReadView{
     
     //release memery 释放内存
@@ -173,7 +173,7 @@ static XDSReadManager *readManager;
     }
 }
 
-//MARK: - 添加或删除书签
+/// MARK:  - 添加或删除书签
 - (void)addBookMark{
     XDSMarkModel *markModel = [[XDSMarkModel alloc] init];
     XDSChapterModel *currentChapterModel = _bookModel.record.chapterModel;

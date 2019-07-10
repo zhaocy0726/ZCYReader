@@ -43,7 +43,7 @@ XDSCatalogueViewDelegate
 
 @implementation XDSReadMenu
 
-//MARK: -  override super method
+/// MARK:  -  override super method
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self createReadMenu];
@@ -131,18 +131,18 @@ XDSCatalogueViewDelegate
     self.leftView.cvDelegate = self;
     [self addSubview:self.leftView];
 }
-//MARK: - ABOUT UI
+/// MARK:  - ABOUT UI
 - (void)createUI{
     
 }
-//MARK: - DELEGATE METHODS
+/// MARK:  - DELEGATE METHODS
 //TODO: XDSMenuBottomViewDelegate
 - (void)menuBottomView:(XDSMenuBottomView *)bottomView didSelectedFuctionButton:(UIButton *)button{
     if (button.tag == 0) {
         [self showCatalogueView];
-    }else if (button.tag == 1){
+    } else if (button.tag == 1) {
         [self showLightView];
-    }else if (button.tag == 2){
+    } else if (button.tag == 2) {
         [self showReadSettingView];
     }
 }
@@ -211,16 +211,16 @@ XDSCatalogueViewDelegate
     [self hideReadMenu];
 }
 
-//MARK: - ABOUT REQUEST
+/// MARK:  - ABOUT REQUEST
 
-//MARK: - ABOUT EVENTS
+/// MARK:  - ABOUT EVENTS
 - (void)handleTap:(UITapGestureRecognizer *)tap{
     
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self hideReadMenu];
 }
-//MARK: - OTHER PRIVATE METHODS
+/// MARK:  - OTHER PRIVATE METHODS
 - (void)showCatalogueView{
     CGRect topFrame = CGRectMake(0, -kNavgationBarHeight, DEVICE_MAIN_SCREEN_WIDTH_XDSR, kNavgationBarHeight);
     CGRect bottomViewFrame = CGRectMake(0,
@@ -308,21 +308,21 @@ XDSCatalogueViewDelegate
         } completion:^(BOOL finished) {
             [self removeFromSuperview];
         }];
-    }else if (CGRectGetMinY(self.lightView.frame) < DEVICE_MAIN_SCREEN_HEIGHT_XDSR) {
+    } else if (CGRectGetMinY(self.lightView.frame) < DEVICE_MAIN_SCREEN_HEIGHT_XDSR) {
         [UIView animateWithDuration:kXDSReadMenuAnimateDuration animations:^{
             self.lightView.frame = lightViewFrame;
             self.topView.frame = topFrame;
         } completion:^(BOOL finished) {
             [self removeFromSuperview];
         }];
-    }else if (CGRectGetMaxX(self.leftView.frame) > 0) {
+    } else if (CGRectGetMaxX(self.leftView.frame) > 0) {
         [UIView animateWithDuration:kXDSReadMenuAnimateDuration animations:^{
             self.leftView.frame = leftViewFrame;
             self.topView.frame = topFrame;
         } completion:^(BOOL finished) {
             [self removeFromSuperview];
         }];
-    }else{
+    } else {
         [UIView animateWithDuration:kXDSReadMenuAnimateDuration animations:^{
             self.bottomView.frame = bottomViewFrame;
             self.topView.frame = topFrame;
@@ -350,7 +350,7 @@ XDSCatalogueViewDelegate
     }
 }
 
-//MARK: - ABOUT MEMERY
+/// MARK:  - ABOUT MEMERY
 - (void)dataInit{
 //#warning 添加视图类名称，点击这些控件不需要执行手势
 //    self.classArray = @[@"UISlider"];

@@ -17,7 +17,7 @@ NSString *const kNoteModelChapterEncodeKey = @"chapter";
 NSString *const kNoteModelLocationEncodeKey = @"locationInChapterContent";
 
 
--(void)encodeWithCoder:(NSCoder *)aCoder{
+- (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.date forKey:kNoteModelDateEncodeKey];
     [aCoder encodeObject:self.note forKey:kNoteModelNoteEncodeKey];
     [aCoder encodeObject:self.content forKey:kNoteModelContentEncodeKey];
@@ -25,7 +25,7 @@ NSString *const kNoteModelLocationEncodeKey = @"locationInChapterContent";
     [aCoder encodeInteger:self.locationInChapterContent forKey:kNoteModelLocationEncodeKey];
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder{
+- (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
     if (self) {
         self.date = [aDecoder decodeObjectForKey:kNoteModelDateEncodeKey];
@@ -42,9 +42,9 @@ NSString *const kNoteModelLocationEncodeKey = @"locationInChapterContent";
     NSInteger page = 0;
     if (chapterModel.pageLocations.count < 1) {
         page = 0;
-    }else if (self.locationInChapterContent >= [chapterModel.pageLocations.lastObject integerValue]) {
+    } else if (self.locationInChapterContent >= [chapterModel.pageLocations.lastObject integerValue]) {
         page = chapterModel.pageLocations.count - 1;
-    }else{
+    } else {
         for (int i = 0; i < chapterModel.pageLocations.count; i ++) {
             NSInteger location = [chapterModel.pageLocations[i] integerValue];
             if (self.locationInChapterContent < location) {

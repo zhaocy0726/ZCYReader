@@ -33,7 +33,7 @@
     [self.tableView reloadData];
     if (CURRENT_BOOK_MODEL.chapterContainMarks.count) {
         self.noDataView.hidden = YES;
-    }else{
+    } else {
         self.noDataView.hidden = NO;
     }
 }
@@ -60,7 +60,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (_cvDelegate && [_cvDelegate respondsToSelector:@selector(catalogueViewDidSelectedMark:)]){
+    if (_cvDelegate && [_cvDelegate respondsToSelector:@selector(catalogueViewDidSelectedMark:)]) {
         XDSChapterModel *chapterModel = CURRENT_BOOK_MODEL.chapterContainMarks[indexPath.section];
         XDSMarkModel *markModel = chapterModel.marks[indexPath.row];
         [_cvDelegate catalogueViewDidSelectedMark:markModel];

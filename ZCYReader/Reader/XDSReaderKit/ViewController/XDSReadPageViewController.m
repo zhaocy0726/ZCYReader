@@ -8,21 +8,21 @@
 
 #import "XDSReadPageViewController.h"
 #import "XDSReadMenu.h"
-@interface XDSReadPageViewController ()
-<UIPageViewControllerDelegate,
+@interface XDSReadPageViewController () <
+UIPageViewControllerDelegate,
 UIPageViewControllerDataSource,
 UIGestureRecognizerDelegate,
 XDSReadManagerDelegate
 >
 {
-    NSInteger _chapter;    //当前显示的章节
-    NSInteger _page;       //当前显示的页数
-    NSInteger _chapterChange;  //将要变化的章节
-    NSInteger _pageChange;     //将要变化的页数
+    NSInteger _chapter;         //当前显示的章节
+    NSInteger _page;            //当前显示的页数
+    NSInteger _chapterChange;   //将要变化的章节
+    NSInteger _pageChange;      //将要变化的页数
 }
 
-@property (nonatomic,strong) UIPageViewController *pageViewController;
-@property (strong, nonatomic) XDSReadMenu *readMenuView;//菜单
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) XDSReadMenu *readMenuView; //菜单栏
 
 @end
 
@@ -30,52 +30,36 @@ XDSReadManagerDelegate
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self readPageViewControllerDataInit];
+    
     [self createReadPageViewControllerUI];
 }
 
--(void)viewDidLayoutSubviews{
+- (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     _pageViewController.view.frame = self.view.frame;
 }
 
-//MARK: - ABOUT UI
-- (void)createReadPageViewControllerUI{
+/// MARK: 配置界面UI
+- (void)createReadPageViewControllerUI {
     [self addChildViewController:self.pageViewController];
     
     _chapter = CURRENT_RECORD.currentChapter;
-    _page = CURRENT_RECORD.currentPage;
+    _page    = CURRENT_RECORD.currentPage;
     
-    XDSReadViewController *readVC = [[XDSReadManager sharedManager] readViewWithChapter:&_chapter
-                                                                                   page:&_page
-                                                                                pageUrl:nil];
+    XDSReadViewController *readVC = [[XDSReadManager sharedManager] readViewWithChapter:&_chapter page:&_page pageUrl:nil];
     [_pageViewController setViewControllers:@[readVC]
                                   direction:UIPageViewControllerNavigationDirectionForward
                                    animated:YES
                                  completion:nil];
-    [self.view addGestureRecognizer:({
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showToolMenu)];
-        tap.delegate = self;
-        tap;
-    })];
     
-
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showToolMenu)];
+    tap.delegate = self;
+    [self.view addGestureRecognizer:tap];
 }
 
 #pragma mark - init
--(UIPageViewController *)pageViewController{
-    if (!_pageViewController) {
-        _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
-                                                              navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
-                                                                            options:nil];
-        _pageViewController.delegate = self;
-        _pageViewController.dataSource = self;
-        [self.view addSubview:_pageViewController.view];
-    }
-    return _pageViewController;
-}
 
-//MARK: - DELEGATE METHODS
+/// MARK:  - DELEGATE METHODS
 //TODO: XDSReadManagerDelegate
 - (void)readViewDidClickCloseButton{
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -166,7 +150,7 @@ XDSReadManagerDelegate
     if (_pageChange == CURRENT_RECORD.totalPage-1) {
         _chapterChange++;
         _pageChange = 0;
-    }else{
+    } else {
         _pageChange++;
     }
     
@@ -193,29 +177,40 @@ XDSReadManagerDelegate
         _page = readView.pageNum;
         _chapter = readView.chapterNum;
     }
-    else{
+    else {
         _chapter = _chapterChange;
         _page = _pageChange;
         [[XDSReadManager sharedManager] updateReadModelWithChapter:_chapter page:_page];
     }
 }
-//MARK: - ABOUT REQUEST
-//MARK: - ABOUT EVENTS
--(void)showToolMenu{
+
+/// MARK: 显示菜单栏
+- (void)showToolMenu {
     XDSReadViewController *readView = _pageViewController.viewControllers.firstObject;
     [readView.readView cancelSelected];
     [self.view addSubview:self.readMenuView];
 }
-//MARK: - OTHER PRIVATE METHODS
-- (XDSReadMenu *)readMenuView{
+
+#pragma mark - setter
+
+- (UIPageViewController *)pageViewController {
+    if (!_pageViewController) {
+        _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
+                                                              navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                                                                            options:nil];
+        _pageViewController.delegate = self;
+        _pageViewController.dataSource = self;
+        [self.view addSubview:_pageViewController.view];
+    }
+    return _pageViewController;
+}
+
+- (XDSReadMenu *)readMenuView {
     if (nil == _readMenuView) {
         _readMenuView = [[XDSReadMenu alloc] initWithFrame:self.view.bounds];
         _readMenuView.backgroundColor = [UIColor clearColor];
     }
     return _readMenuView;
 }
-//MARK: - ABOUT MEMERY
-- (void)readPageViewControllerDataInit{}
-
 
 @end
