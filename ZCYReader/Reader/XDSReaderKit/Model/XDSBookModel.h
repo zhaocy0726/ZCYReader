@@ -24,37 +24,37 @@
 //    <rights>：权限描述
 //    <x-metadata>，即扩展元素。如果有些信息在上述元素中无法描述，则在此元素中进行扩展。
 
-@property (nonatomic,copy) NSString *rootDocumentUrl;//解压包所在路径
-@property (nonatomic,copy) NSString *OEBPSUrl;//OPF与NCX文件所在的文件夹路径
+@property (nonatomic, copy) NSString *rootDocumentUrl;//解压包所在路径
+@property (nonatomic, copy) NSString *OEBPSUrl;//OPF与NCX文件所在的文件夹路径
 
-@property (nonatomic,copy) NSString *cover;//封面
-@property (nonatomic,copy) NSString *title;
-@property (nonatomic,copy) NSString *creator;
-@property (nonatomic,copy) NSString *subject;
-@property (nonatomic,copy) NSString *descrip;
-@property (nonatomic,copy) NSString *date;
-@property (nonatomic,copy) NSString *type;
-@property (nonatomic,copy) NSString *format;
-@property (nonatomic,copy) NSString *identifier;
-@property (nonatomic,copy) NSString *source;
-@property (nonatomic,copy) NSString *relation;
-@property (nonatomic,copy) NSString *coverage;
-@property (nonatomic,copy) NSString *rights;
+@property (nonatomic, copy) NSString *cover;//封面
+
+@property (nonatomic, copy) NSString *title; // 题名
+@property (nonatomic, copy) NSString *creator; // 责任者
+@property (nonatomic, copy) NSString *subject; // 主题词或关键词
+@property (nonatomic, copy) NSString *descrip; // 内容描述
+@property (nonatomic, copy) NSString *date; // 日期
+@property (nonatomic, copy) NSString *type; // 类型
+@property (nonatomic, copy) NSString *format; // 格式
+@property (nonatomic, copy) NSString *identifier; // 标识符
+@property (nonatomic, copy) NSString *source; // 来源
+@property (nonatomic, copy) NSString *relation; // 相关信息
+@property (nonatomic, copy) NSString *coverage; // 履盖范围
+@property (nonatomic, copy) NSString *rights; // 权限描述
+
 @end
 
 @interface XDSBookModel : NSObject <NSCoding>
 
-@property (nonatomic,strong) NSURL *resource;//资源路径
+@property (nonatomic, strong) NSURL *resource;//资源路径
 @property (nonatomic, strong) LPPBookInfoModel *bookBasicInfo;//书籍基本信息
-@property (nonatomic,copy) NSString *content;//电子书文本内容
-@property (nonatomic,assign) LPPEBookType bookType;//电子书类型（txt, epub）
-@property (nonatomic,readonly) NSArray <XDSChapterModel*> *chapters;//章节
-@property (nonatomic,readonly) NSArray <XDSChapterModel*> *chapterContainNotes;//包含笔记的章节
-@property (nonatomic,readonly) NSArray <XDSChapterModel*> *chapterContainMarks;//包含书签的章节
+@property (nonatomic, copy) NSString *content;//电子书文本内容
+@property (nonatomic, assign) LPPEBookType bookType;//电子书类型（txt, epub）
+@property (nonatomic, readonly) NSArray <XDSChapterModel*> *chapters;//章节
+@property (nonatomic, readonly) NSArray <XDSChapterModel*> *chapterContainNotes;//包含笔记的章节
+@property (nonatomic, readonly) NSArray <XDSChapterModel*> *chapterContainMarks;//包含书签的章节
 
-@property (nonatomic,strong) XDSRecordModel *record;//阅读进度
-
-
+@property (nonatomic, strong) XDSRecordModel *record; //阅读进度
 
 - (instancetype)initWithContent:(NSString *)content;
 - (instancetype)initWithePub:(NSString *)ePubPath;

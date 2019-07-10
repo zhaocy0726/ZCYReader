@@ -13,8 +13,8 @@
 @property (nonatomic, assign) CGFloat cachefontSize;
 @property (nonatomic, copy) NSString *cacheFontName;
 @property (nonatomic) CGFloat cacheLineSpace;
-@property (nonatomic,strong) UIColor *cacheTextColor;
-@property (nonatomic,strong) UIColor *cacheTheme;
+@property (nonatomic, strong) UIColor *cacheTextColor;
+@property (nonatomic, strong) UIColor *cacheTheme;
 
 @end
 @implementation XDSReadConfig

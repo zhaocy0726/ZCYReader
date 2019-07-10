@@ -11,10 +11,10 @@
 // 颜色
 @interface XDSHaloButton : UIControl
 
-@property (strong, nonatomic) UIImageView *imageView;// imageView
-@property (strong, nonatomic) UIColor *haloColor;// 光晕颜色
-@property (strong, nonatomic) UIImage *nomalImage;// 默认图片
-@property (strong, nonatomic) UIImage *selectImage;// 选中图片
+@property (nonatomic, strong) UIImageView *imageView;// imageView
+@property (nonatomic, strong) UIColor *haloColor;// 光晕颜色
+@property (nonatomic, strong) UIImage *nomalImage;// 默认图片
+@property (nonatomic, strong) UIImage *selectImage;// 选中图片
 
 - (instancetype)initWithFrame:(CGRect)frame haloColor:(UIColor *)haloColor;
 

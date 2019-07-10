@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface XDSRecordModel : NSObject<NSCopying,NSCoding>
-@property (nonatomic,strong) XDSChapterModel *chapterModel;  //阅读的章节
+@property (nonatomic, strong) XDSChapterModel *chapterModel;  //阅读的章节
 @property (nonatomic) NSInteger location;    //章节中的位置
 @property (nonatomic, assign) NSInteger currentChapter; //阅读的章节
 

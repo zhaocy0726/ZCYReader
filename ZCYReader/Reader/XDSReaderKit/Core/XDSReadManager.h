@@ -18,9 +18,9 @@
 
 + (CGRect)readViewBounds;
 
-@property (nonatomic,strong) NSURL *resourceURL;
-@property (nonatomic,strong) XDSBookModel *bookModel;
-@property (nonatomic,weak) id<XDSReadManagerDelegate> rmDelegate;
+@property (nonatomic, strong) NSURL *resourceURL;
+@property (nonatomic, strong) XDSBookModel *bookModel;
+@property (nonatomic, weak) id<XDSReadManagerDelegate> rmDelegate;
 
 //获取对于章节页码的radViewController
 - (XDSReadViewController *)readViewWithChapter:(NSInteger *)chapter

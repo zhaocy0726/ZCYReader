@@ -12,9 +12,9 @@
 #import "XDSMarkViewController.h"
 #import "XDSReadViewConst.h"
 @interface XDSCatalogueTabBarController ()
-@property (strong, nonatomic) XDSCatalogueViewController *catalogueVC;
-@property (strong, nonatomic) XDSNoteViewController *noteVC;
-@property (strong, nonatomic) XDSMarkViewController *markVC;
+@property (nonatomic, strong) XDSCatalogueViewController *catalogueVC;
+@property (nonatomic, strong) XDSNoteViewController *noteVC;
+@property (nonatomic, strong) XDSMarkViewController *markVC;
 
 @end
 

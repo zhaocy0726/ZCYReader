@@ -13,7 +13,7 @@
 
 @interface XDSMenuBottomView : XDSReadRootView
 
-@property (weak, nonatomic) id <XDSMenuBottomViewDelegate> bvDelegate;
+@property (nonatomic, weak) id <XDSMenuBottomViewDelegate> bvDelegate;
 
 - (void)setReadProgram:(CGFloat)program;
 

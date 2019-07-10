@@ -9,10 +9,10 @@
 #import "XDSMenuBottomView.h"
 @interface XDSMenuBottomView ()
 
-@property (strong, nonatomic) UIButton *previousChapter;// 上一章
-@property (strong, nonatomic) UIButton *nextChapter;// 下一章
-@property (strong, nonatomic) UISlider *slider;// 进度
-@property (copy, nonatomic) NSArray *funcIcons;//// 功能按钮数组
+@property (nonatomic, strong) UIButton *previousChapter;// 上一章
+@property (nonatomic, strong) UIButton *nextChapter;// 下一章
+@property (nonatomic, strong) UISlider *slider;// 进度
+@property (nonatomic, copy) NSArray *funcIcons;//// 功能按钮数组
 @end
 
 @implementation XDSMenuBottomView

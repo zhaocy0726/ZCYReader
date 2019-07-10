@@ -10,8 +10,8 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSArray *arrCellData;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *arrCellData;
 
 @end
 

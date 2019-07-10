@@ -10,7 +10,7 @@
 #import "XDSReadView.h"
 @interface XDSReadViewController ()
 
-@property (strong, nonatomic) XDSChapterModel *chapterModel;
+@property (nonatomic, strong) XDSChapterModel *chapterModel;
 
 @end
 

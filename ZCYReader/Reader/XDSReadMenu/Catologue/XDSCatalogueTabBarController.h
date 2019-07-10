@@ -12,6 +12,6 @@
 
 @interface XDSCatalogueTabBarController : UITabBarController
 
-@property (weak, nonatomic) id<XDSCatalogueViewDelegate>cvDelegate;
+@property (nonatomic, weak) id<XDSCatalogueViewDelegate>cvDelegate;
 
 @end

@@ -21,8 +21,8 @@ XDSReadManagerDelegate
     NSInteger _pageChange;      //将要变化的页数
 }
 
-@property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) XDSReadMenu *readMenuView; //菜单栏
+@property (nonatomic, strong) UIPageViewController *pageViewController;
+@property (nonatomic, strong) XDSReadMenu *readMenuView; //菜单栏
 
 @end
 

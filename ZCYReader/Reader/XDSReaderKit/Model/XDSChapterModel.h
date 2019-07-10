@@ -37,13 +37,14 @@ typedef  NS_ENUM(NSInteger,LPPEBookType) {
 @property (nonatomic, readonly) NSArray *pageLocations;//每一页在章节中的位置
 @property (nonatomic, readonly) NSInteger pageCount;//章节总页数
 
-- (void)setCatalogueModelArray:(NSArray<XDSCatalogueModel *> *)catalogueModelArray;
-@property (nonatomic, readonly) NSArray<XDSCatalogueModel *> *catalogueModelArray;//本章所有二级目录的Model
-@property (nonatomic, readonly) NSDictionary *locationWithPageIdMapping;//存放对应id的location，用于根据链接跳转到指定页面   @{NSString:NSNumber}
+@property (nonatomic, readonly) NSArray<XDSCatalogueModel *> *catalogueModelArray; //本章所有二级目录的Model
+@property (nonatomic, readonly) NSDictionary *locationWithPageIdMapping; //存放对应id的location，用于根据链接跳转到指定页面   @{NSString:NSNumber}
 
-@property (nonatomic, readonly) NSArray<NSString *> *imageSrcArray;//本章所有图片的链接
+@property (nonatomic, readonly) NSArray<NSString *> *imageSrcArray; //本章所有图片的链接
 @property (nonatomic, readonly) NSArray<XDSNoteModel *>*notes;
 @property (nonatomic, readonly) NSArray<XDSMarkModel *>*marks;
+
+- (void)setCatalogueModelArray:(NSArray<XDSCatalogueModel *> *)catalogueModelArray;
 
 - (void)paginateEpubWithBounds:(CGRect)bounds;
 - (void)addNote:(XDSNoteModel *)noteModel;//insert a book note into chapter 向该章节中插入一条笔记

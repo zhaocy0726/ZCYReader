@@ -62,7 +62,7 @@ NSString *const kXDSCatalogueModelChapterEncodeKey = @"chapter";
 @property (nonatomic, copy) NSArray<XDSMarkModel *>*marks;
 
 
-@property (assign, nonatomic) CGRect showBounds;
+@property (nonatomic, assign) CGRect showBounds;
 @end
 @implementation XDSChapterModel
 

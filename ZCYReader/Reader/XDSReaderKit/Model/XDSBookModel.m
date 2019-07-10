@@ -71,9 +71,9 @@ NSString *const kLPPBookInfoModelRightsEncodeKey = @"rights";
 @end
 
 @interface XDSBookModel()
-@property (nonatomic,strong) NSMutableArray<XDSChapterModel*> *chapters;//章节
-@property (nonatomic,copy) NSArray <XDSChapterModel*> *chapterContainNotes;//包含笔记的章节
-@property (nonatomic,copy) NSArray <XDSChapterModel*> *chapterContainMarks;//包含笔记的章节
+@property (nonatomic, strong) NSMutableArray<XDSChapterModel*> *chapters;//章节
+@property (nonatomic, copy) NSArray <XDSChapterModel*> *chapterContainNotes;//包含笔记的章节
+@property (nonatomic, copy) NSArray <XDSChapterModel*> *chapterContainMarks;//包含笔记的章节
 @end
 @implementation XDSBookModel
 

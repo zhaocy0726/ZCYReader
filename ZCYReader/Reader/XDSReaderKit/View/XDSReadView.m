@@ -28,16 +28,16 @@
     BOOL _isDirectionRight; //滑动方向  (0---左侧滑动 1 ---右侧滑动)
 }
 
-@property (nonatomic,strong) XDSMagnifierView *magnifierView;
+@property (nonatomic, strong) XDSMagnifierView *magnifierView;
 
-@property (strong, nonatomic) DTAttributedTextContentView *readTextView;
+@property (nonatomic, strong) DTAttributedTextContentView *readTextView;
 
 @property (nonatomic, strong) NSMutableAttributedString *readAttributedContent;
 
 @property (nonatomic, copy) NSString *content;
 
-@property (assign, nonatomic) NSInteger chapterNum;//
-@property (assign, nonatomic) NSInteger pageNum;
+@property (nonatomic, assign) NSInteger chapterNum;//
+@property (nonatomic, assign) NSInteger pageNum;
 @end
 @implementation XDSReadView
 

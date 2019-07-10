@@ -10,11 +10,11 @@
 
 @interface XDSReadViewController : UIViewController
 
-@property (strong, nonatomic) XDSReadView *readView;
+@property (nonatomic, strong) XDSReadView *readView;
 
-@property (assign, nonatomic) NSInteger chapterNum;//
-@property (assign, nonatomic) NSInteger pageNum;
-@property (copy, nonatomic) NSString *pageUrl;
+@property (nonatomic, assign) NSInteger chapterNum;//
+@property (nonatomic, assign) NSInteger pageNum;
+@property (nonatomic, copy) NSString *pageUrl;
 
 
 /*

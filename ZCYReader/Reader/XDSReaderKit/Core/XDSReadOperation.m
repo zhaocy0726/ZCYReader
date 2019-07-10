@@ -317,7 +317,6 @@
     //    <relation>：相关信息
     //    <coverage>：履盖范围
     //    <rights>：权限描述
-    //    <x-metadata>，即扩展元素。如果有些信息在上述元素中无法描述，则在此元素中进行扩展。
     
     NSString *xPath = [NSString stringWithFormat:@"//dc:%@[1]",key];
     CXMLNode *node = [document nodeForXPath:xPath namespaceMappings:[NSDictionary dictionaryWithObject:@"http://purl.org/dc/elements/1.1/" forKey:@"dc"] error:nil];

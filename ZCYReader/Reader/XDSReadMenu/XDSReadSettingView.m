@@ -10,10 +10,10 @@
 #import "XDSHaloButton.h"
 @interface XDSReadSettingView()
 
-@property (copy, nonatomic) NSArray *themsArray;
-@property (copy, nonatomic) NSArray *effectArray;
-@property (copy, nonatomic) NSArray *fontArray;
-@property (copy, nonatomic) NSArray *fontSizeArray;
+@property (nonatomic, copy) NSArray *themsArray;
+@property (nonatomic, copy) NSArray *effectArray;
+@property (nonatomic, copy) NSArray *fontArray;
+@property (nonatomic, copy) NSArray *fontSizeArray;
 @end
 
 @implementation XDSReadSettingView

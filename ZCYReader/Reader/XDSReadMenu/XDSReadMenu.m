@@ -29,15 +29,15 @@ XDSMenuBottomViewDelegate,
 XDSReadSettingViewDelegatge,
 XDSCatalogueViewDelegate
 >
-//@property (weak, nonatomic) id /**<XDSReadMenuDelegate>*/ delegate;/// 代理
-@property (assign, nonatomic) BOOL menuShow;// 菜单显示
-@property (strong, nonatomic) XDSCatalogueView *leftView;// LeftView
-@property (strong, nonatomic) XDSMenuTopView *topView;/// TopView
-@property (strong, nonatomic) XDSMenuBottomView *bottomView;/// BottomView
-@property (strong, nonatomic) XDSLightView *lightView;/// 亮度
-@property (strong, nonatomic) UIView *coverView;/// 遮盖亮度
-@property (strong, nonatomic) UIButton *lightButton;/// 亮度按钮
-@property (strong, nonatomic) XDSReadSettingView *readSettingView;/// 小说阅读设置
+//@property (nonatomic, weak) id /**<XDSReadMenuDelegate>*/ delegate;/// 代理
+@property (nonatomic, assign) BOOL menuShow;// 菜单显示
+@property (nonatomic, strong) XDSCatalogueView *leftView;// LeftView
+@property (nonatomic, strong) XDSMenuTopView *topView;/// TopView
+@property (nonatomic, strong) XDSMenuBottomView *bottomView;/// BottomView
+@property (nonatomic, strong) XDSLightView *lightView;/// 亮度
+@property (nonatomic, strong) UIView *coverView;/// 遮盖亮度
+@property (nonatomic, strong) UIButton *lightButton;/// 亮度按钮
+@property (nonatomic, strong) XDSReadSettingView *readSettingView;/// 小说阅读设置
 
 @end
 

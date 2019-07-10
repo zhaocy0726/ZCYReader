@@ -10,8 +10,8 @@
 
 @interface XDSMenuTopView ()
 
-@property (strong, nonatomic) UIButton *backButton;// 返回按钮
-@property (strong, nonatomic) UIButton *markButton;// 书签
+@property (nonatomic, strong) UIButton *backButton;// 返回按钮
+@property (nonatomic, strong) UIButton *markButton;// 书签
 
 @end
 

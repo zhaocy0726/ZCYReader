@@ -10,7 +10,7 @@
 
 @interface XDSMagnifierView : UIView
 
-@property (nonatomic,weak) UIView *readView;
+@property (nonatomic, weak) UIView *readView;
 @property (nonatomic) CGPoint touchPoint;
 
 @end

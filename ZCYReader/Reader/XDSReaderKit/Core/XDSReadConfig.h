@@ -22,8 +22,8 @@
 @property (nonatomic, assign) CGFloat currentFontSize;
 @property (nonatomic, copy) NSString *currentFontName;
 @property (nonatomic) CGFloat currentLineSpace;
-@property (nonatomic,strong) UIColor *currentTextColor;
-@property (nonatomic,strong) UIColor *currentTheme;
+@property (nonatomic, strong) UIColor *currentTextColor;
+@property (nonatomic, strong) UIColor *currentTheme;
 
 + (instancetype)shareInstance;
 

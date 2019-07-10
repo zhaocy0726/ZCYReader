@@ -11,7 +11,7 @@
 
 @protocol XDSReadSettingViewDelegatge;
 @interface XDSReadSettingView : XDSReadRootView
-@property (weak, nonatomic) id <XDSReadSettingViewDelegatge> svDelegate;
+@property (nonatomic, weak) id <XDSReadSettingViewDelegatge> svDelegate;
 
 - (void)startHaloAnimate;//开启光环动画
 
