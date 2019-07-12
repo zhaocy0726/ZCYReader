@@ -71,10 +71,13 @@ NSString *const kLPPBookInfoModelRightsEncodeKey = @"rights";
 @end
 
 @interface XDSBookModel()
+
 @property (nonatomic, strong) NSMutableArray<XDSChapterModel*> *chapters;//章节
 @property (nonatomic, copy) NSArray <XDSChapterModel*> *chapterContainNotes;//包含笔记的章节
 @property (nonatomic, copy) NSArray <XDSChapterModel*> *chapterContainMarks;//包含笔记的章节
+
 @end
+
 @implementation XDSBookModel
 
 NSString *const kXDSBookModelBookBasicInfoEncodeKey = @"bookBasicInfo";
@@ -98,6 +101,7 @@ NSString *const kXDSBookModelRecordEncodeKey = @"record";
     }
     return self;
 }
+
 - (instancetype)initWithePub:(NSString *)ePubPath{
     self = [super init];
     if (self) {
@@ -143,7 +147,8 @@ NSString *const kXDSBookModelRecordEncodeKey = @"record";
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:key];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
-+ (id)getLocalModelWithURL:(NSURL *)url{
+
++ (id)getLocalModelWithURL:(NSURL *)url {
     NSString *key = [url.path lastPathComponent];
     NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:key];
     if (!data) {

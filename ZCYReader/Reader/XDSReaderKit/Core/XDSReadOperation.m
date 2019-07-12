@@ -307,13 +307,11 @@
     //    <creator>：责任者
     //    <subject>：主题词或关键词
     //    <description>：内容描述
-    //    <contributor>：贡献者或其它次要责任者
     //    <date>：日期
     //    <type>：类型
     //    <format>：格式
     //    <identifier>：标识符
     //    <source>：来源
-    //    <language>：语种
     //    <relation>：相关信息
     //    <coverage>：履盖范围
     //    <rights>：权限描述

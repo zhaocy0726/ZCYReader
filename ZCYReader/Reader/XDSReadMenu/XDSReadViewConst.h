@@ -36,8 +36,6 @@ UIKIT_EXTERN CGFloat const kStatusBarHeight;// StatusBar高度
 #define TEXT_COLOR_XDS_5 RGB_XDS(145, 145, 145)/// 小说阅读颜色
 #define TEXT_COLOR_XDS_6 RGB_XDS(200, 200, 200)/// LeftView文字颜色
 
-
-
 /// MARK:  -- 阅读背景颜色支持
 #define RGB_XDS(__R__, __G__, __B__) [UIColor colorWithRed:(__R__)/255.0 green:(__G__)/255.0 blue:(__B__)/255.0 alpha:1.0]
 #define READ_BACKGROUND_COLOC_1 RGB_XDS(238, 224, 202)

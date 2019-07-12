@@ -44,9 +44,6 @@ NSString *const kXDSCatalogueModelChapterEncodeKey = @"chapter";
 @end
 
 
-
-
-
 @interface XDSChapterModel ()
 @property (nonatomic, copy) NSAttributedString *chapterAttributeContent;//全章的富文本
 @property (nonatomic, copy) NSString *chapterContent;//全章的纯文本
@@ -406,6 +403,7 @@ NSString *const kXDSChapterModelMarksEncodeKey = @"marks";
     
     return notes;
 }
+
 - (BOOL)isReadConfigChanged {
     XDSReadConfig *shareConfig = [XDSReadConfig shareInstance];
     BOOL isReadConfigChanged = ![_currentConfig isEqual:shareConfig];

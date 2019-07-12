@@ -167,6 +167,7 @@ XDSReadManagerDelegate
     _chapter = _chapterChange;
     _page = _pageChange;
 }
+
 - (void)pageViewController:(UIPageViewController *)pageViewController
         didFinishAnimating:(BOOL)finished
    previousViewControllers:(NSArray *)previousViewControllers
